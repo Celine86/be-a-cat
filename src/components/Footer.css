@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 0.15rem solid var(--tertiary);
+    height: 5vh;
+}
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.15rem 0;
+}

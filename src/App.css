@@ -1,0 +1,29 @@
+*{
+    margin: 0.15rem;
+    padding: 0;
+}
+:root {
+    --primary-bg-color: #182534;
+    --primary: #FFFFFF;
+    --secondary: #1DD2AF;
+    --tertiary: #ffff00;
+}
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+}
+main {
+    height: 85vh;
+}
+a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: var(--tertiary);
+    text-decoration: none;
+    font-weight: bold;
+}

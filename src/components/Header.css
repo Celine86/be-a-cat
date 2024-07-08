@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.15rem solid var(--tertiary);
+    height: 5vh;
+}
+.mainLogo {
+    width: 2rem;
+    height: auto;
+}
+.website {
+    width: 2rem;
+    height: auto;
+}
+.container__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.header__elmt{
+    width: 10rem;
+}
+.container__mytitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mytitle {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@media (max-width: 1250px) { 
+    .mainLogo {
+        width: 1.5rem;
+    }
+    .website {
+        width: 1.5rem;
+    }
+    .mytitle {
+        font-size: 1.5rem;
+    }
+}

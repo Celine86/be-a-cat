@@ -1,0 +1,63 @@
+.dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+    height: 80vh;
+    margin : auto;
+    background-color: var(--primary-bg-color);
+    color: var(--primary);
+    border: 0.15rem solid var(--secondary);
+    border-radius: 5rem;
+}
+button {
+    cursor: url(../assets/imgs/catPaw-green.png), auto;
+    background-color: var(--primary-bg-color);
+    color: var(--primary);
+    border: 1px solid var(--secondary);
+    border-radius: 5rem;
+    padding: 1rem;
+    width: 8rem;
+    align-self: center;
+}
+button:hover {
+    cursor: url(../assets/imgs/catPaw-yellow.png), auto;
+    border: 1px solid var(--tertiary);
+}
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+}
+.modalContainer--title {
+    text-align: center;
+}
+.modalContainer__subContainer {
+    margin: 1rem auto;
+    width: 95%;
+}
+.presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+.presentation__patapouf {
+    width: 25rem;
+    height: auto;
+}
+.presentation__texte {
+    width: 25rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.presentation__texte--center {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+.notCompatible {
+    text-align: center;
+}
