@@ -5,7 +5,7 @@
     justify-content: center;
     width: 95vw;
     height: 80vh;
-    margin : auto;
+    margin : 8vh auto;
     background-color: var(--primary-bg-color);
     color: var(--primary);
     border: 0.15rem solid var(--secondary);
