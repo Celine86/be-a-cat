@@ -10,6 +10,7 @@
     color: var(--primary);
     border: 0.15rem solid var(--secondary);
     border-radius: 5rem;
+    cursor: url(../assets/imgs/catPaw-green.png), auto;
 }
 button {
     cursor: url(../assets/imgs/catPaw-green.png), auto;

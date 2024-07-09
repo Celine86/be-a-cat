@@ -4,7 +4,6 @@ import catYellow from '../assets/imgs/cat-yellow.png';
 import catPawGreen from '../assets/imgs/bigCatPaw-green.png';
 import catPawYellow from '../assets/imgs/bigCatPaw-yellow.png';
 
-
 export function Header() {
     return (
         <>
