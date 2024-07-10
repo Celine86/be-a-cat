@@ -3,17 +3,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 95vw;
-    height: 80vh;
-    margin : 8vh auto;
     background-color: var(--primary-bg-color);
     color: var(--primary);
     border: 0.15rem solid var(--secondary);
     border-radius: 5rem;
-    cursor: url(../assets/imgs/catPaw-green.png), auto;
+    cursor: url(/catPaw-green.png), auto;
+}
+.homeModal {
+    width: 95vw;
+    height: 80vh;
+    margin : 8vh auto;
 }
 button {
-    cursor: url(../assets/imgs/catPaw-green.png), auto;
+    cursor: url(/catPaw-green.png), auto;
     background-color: var(--primary-bg-color);
     color: var(--primary);
     border: 1px solid var(--secondary);
@@ -23,7 +25,7 @@ button {
     align-self: center;
 }
 button:hover {
-    cursor: url(../assets/imgs/catPaw-yellow.png), auto;
+    cursor: url(/catPaw-yellow.png), auto;
     border: 1px solid var(--tertiary);
 }
 .modalContainer {

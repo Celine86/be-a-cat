@@ -2,5 +2,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: url(../assets/imgs/catPaw-green.png), auto;
+    cursor: url(/catPaw-green.png), auto;
 }

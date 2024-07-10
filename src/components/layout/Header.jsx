@@ -1,15 +1,14 @@
 import './Header.css';
-import catGreen from '../assets/imgs/cat-green.png';
-import catYellow from '../assets/imgs/cat-yellow.png';
-import catPawGreen from '../assets/imgs/bigCatPaw-green.png';
-import catPawYellow from '../assets/imgs/bigCatPaw-yellow.png';
+import catGreen from '/cat-green.png';
+import catYellow from '/cat-yellow.png';
+import catPawGreen from '/bigCatPaw-green.png';
+import catPawYellow from '/bigCatPaw-yellow.png';
 
 export function Header() {
     return (
-        <>
         <header>
             <div className="header__elmt">
-                <a href="#">
+                <a href="/">
                     <img className="website" src={catPawGreen}
                             onMouseOver={e => e.currentTarget.src = catPawYellow}
                             onMouseOut={e => e.currentTarget.src = catPawGreen}
@@ -28,6 +27,5 @@ export function Header() {
                 </a>
             </div>
         </header>
-        </>
     )
 }

@@ -3,7 +3,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import { Layout } from "./components/Layout.jsx"
+import { Nav } from "./components/navigation/Nav.jsx"
 import { Home } from "./pages/Home.jsx"
 import { Page404 } from "./pages/Page404.jsx"
 import { Toto } from "./pages/Toto.jsx"
@@ -12,7 +12,7 @@ import { Toto } from "./pages/Toto.jsx"
 function App() {
   const router = createBrowserRouter([
     {
-      element: <Layout />,
+      element: <Nav />,
       errorElement: <Page404 />,
       children: [
         {
@@ -33,21 +33,3 @@ function App() {
 }
 
 export default App;
-
-
-/*import { Header } from "./components/Header.jsx";
-import { Footer } from "./components/Footer.jsx";
-import { Home } from "./pages/Home.jsx";
-
-function App() {
-
-  return (
-    <>
-      <Header />
-        <Home />
-      <Footer />
-    </>
-  );
-}
-
-export default App;*/

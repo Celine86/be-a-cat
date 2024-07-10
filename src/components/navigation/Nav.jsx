@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
-import { useDeviceType } from '../hooks/useDeviceType.js';
-import { Header } from "./Header.jsx";
-import { Footer } from "./Footer.jsx";
+import { useDeviceType } from '../../hooks/useDeviceType.js';
+import { Header } from "../layout/Header.jsx";
+import { Footer } from "../layout/Footer.jsx";
 
-export function Layout() {
+export function Nav() {
 
     const deviceType = useDeviceType();
 
@@ -11,12 +11,11 @@ export function Layout() {
         <>
             <Header />
                 <main className="home">
-                    {deviceType === 'mobileOrTablet' && (
-                        <div className='modalContainer'>
+                    {deviceType === 'mobileOrTablet' ? (
+                        <div>
                             <p className='notCompatible'>Pas compatible</p>
                         </div>
-                    )}                    
-                    {deviceType === 'desktop' && (
+                    ) : (
                     <Outlet />
                     )}
                 </main>          
