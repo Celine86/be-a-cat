@@ -19,7 +19,7 @@ export function Header() {
                 <h1 className="mytitle">Be A Cat</h1>
             </div>
             <div className="header__elmt container__nav ">
-                <a href="https://lilineslab.fr">
+                <a target="_blank" href="https://lilineslab.fr">
                     <img className="mainLogo" src={catGreen}
                         onMouseOver={e => e.currentTarget.src = catYellow}
                         onMouseOut={e => e.currentTarget.src = catGreen}

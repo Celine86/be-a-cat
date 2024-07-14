@@ -15,7 +15,11 @@ body {
     flex-direction: column;
 }
 main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 85vh;
+    cursor: url(/catPaw-green.png), auto;
 }
 a {
     color: var(--secondary);

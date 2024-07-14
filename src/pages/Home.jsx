@@ -6,8 +6,8 @@ export function Home() {
     return (
         <>
         <HomeModal />
-        <div>
-            <p>Test</p>
+        <div className="sleepingroom">
+            <img src="/Patapouf_Room.jpeg" />
         </div>
         </>
     )

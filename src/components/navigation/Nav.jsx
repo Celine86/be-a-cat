@@ -10,7 +10,7 @@ export function Nav() {
     return (
         <>
             <Header />
-                <main className="home">
+                <main>
                     {deviceType === 'mobileOrTablet' ? (
                         <div>
                             <p className='notCompatible'>Pas compatible</p>
