@@ -1,0 +1,19 @@
+.sleepingroom {
+    width: 95vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sleepingroom img {
+    display: block;
+    width: 624px;
+    height: 624px;
+}
+area:hover {
+    cursor: url(/catPaw-yellow.png), auto;
+}
+.info {
+    height: 5vh;
+    display: block;
+}

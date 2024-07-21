@@ -6,7 +6,7 @@ import {
 import { Nav } from "./components/navigation/Nav.jsx"
 import { Home } from "./pages/Home.jsx"
 import { Page404 } from "./pages/Page404.jsx"
-import { Toto } from "./pages/Toto.jsx"
+import { SleepingRoom } from './pages/SleepingRoom.jsx';
 
 
 function App() {
@@ -20,8 +20,8 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/toto",
-          element: <Toto />,
+          path: "/sleepingroom",
+          element: <SleepingRoom />,
         },
       ],
     },
