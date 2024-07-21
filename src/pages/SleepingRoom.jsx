@@ -1,15 +1,10 @@
 import './SleepingRoom.css';
 import sleepingroom from '/Patapouf_SleepingRoom.jpeg';
-import { useState } from 'react';
+import useClickedArea from '../hooks/useClickedArea.js'; 
 
 export function SleepingRoom () {
 
-  const [clickedArea, setClickedArea] = useState(null);
-
-  const handleClick = (area) => {
-      setClickedArea(area);
-      console.log(`You clicked on ${area}`);
-  };
+  const [clickedArea, handleClick] = useClickedArea();
 
   return (
     <>
