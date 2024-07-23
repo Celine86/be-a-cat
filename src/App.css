@@ -32,3 +32,37 @@ a:hover {
     text-decoration: none;
     font-weight: bold;
 }
+area:hover {
+    cursor: url(/catPaw-yellow.png), auto;
+}
+.info {
+    height: 10vh;
+    width: 50vh;
+}
+.onMouseEnter {
+    height: 2vh;
+    display: block;
+}
+.onMouseEnter__p {
+    text-align: center;
+}
+.clicked {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+.roomBtn {
+    background-color: var(--primary-bg-color);
+    padding: 0.15rem;
+    width: 10rem;
+    border: 0.15rem solid var(--secondary);
+    color: var(--secondary);
+    cursor: url(/catPaw-green.png), auto;
+}
+.roomBtn:hover {
+    border: 0.15rem solid var(--tertiary);
+    color: var(--tertiary);
+    cursor: url(/catPaw-yellow.png), auto;
+}

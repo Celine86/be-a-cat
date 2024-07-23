@@ -1,6 +1,6 @@
 .sleepingroom {
     width: 95vw;
-    height: 75vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,11 +9,4 @@
     display: block;
     width: 624px;
     height: 624px;
-}
-area:hover {
-    cursor: url(/catPaw-yellow.png), auto;
-}
-.info {
-    height: 5vh;
-    display: block;
 }

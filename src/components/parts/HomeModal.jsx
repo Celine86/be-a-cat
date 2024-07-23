@@ -27,7 +27,7 @@ export function HomeModal() {
                                 </div>
                             </div>
                         </div>
-                        <button onClick={swapWindow}>J'ai compris !</button>
+                        <button className="modalBtn" onClick={swapWindow}>J'ai compris !</button>
                     </div>
                 </Modal>
                 , document.getElementById("root")

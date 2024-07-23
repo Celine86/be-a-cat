@@ -5,8 +5,13 @@ export default function useClickedArea () {
 
   const handleClick = (area) => {
     setClickedArea(area);
-    console.log(`You clicked on ${area}`);
+    //console.log(`You clicked on ${area}`);
   };
 
-  return [clickedArea, handleClick];
+  const resetClickedArea = () => {
+    setClickedArea(null);
+    //console.log(`The clicked area has been reset`);
+  };
+
+  return [clickedArea, handleClick, resetClickedArea];
 };

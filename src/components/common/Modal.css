@@ -14,7 +14,7 @@
     height: 80vh;
     margin : 8vh auto;
 }
-button {
+.modalBtn {
     cursor: url(/catPaw-green.png), auto;
     background-color: var(--primary-bg-color);
     color: var(--primary);
@@ -24,7 +24,7 @@ button {
     width: 8rem;
     align-self: center;
 }
-button:hover {
+.modalBtn:hover {
     cursor: url(/catPaw-yellow.png), auto;
     border: 1px solid var(--tertiary);
 }
