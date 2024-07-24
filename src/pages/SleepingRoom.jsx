@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import './SleepingRoom.css';
 import sleepingroom from '/Patapouf_SleepingRoom.jpeg';
 import useClickedArea from '../hooks/useClickedArea.js'; 
 import useMouseEnter from '../hooks/useMouseEnter.js';
@@ -34,7 +33,7 @@ export function SleepingRoom () {
 
   return (
     <>
-    <div className="sleepingroom"> 
+    <div className="room"> 
       <img src={sleepingroom} alt="Clickable" useMap="#image-map" />
       <map name="image-map">
         <area ref={zoneRefs.Zone1} shape="circle" coords="292,202,15" alt="Zone1" onClick={() => handleClick('Zone1')} />

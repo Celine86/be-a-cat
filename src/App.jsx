@@ -7,6 +7,7 @@ import { Nav } from "./components/navigation/Nav.jsx"
 import { Home } from "./pages/Home.jsx"
 import { Page404 } from "./pages/Page404.jsx"
 import { SleepingRoom } from './pages/SleepingRoom.jsx';
+import { LivingRoom } from './pages/LivingRoom.jsx';
 
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
         {
           path: "/sleepingroom",
           element: <SleepingRoom />,
+        },
+        {
+          path: "/livingroom",
+          element: <LivingRoom />,
         },
       ],
     },

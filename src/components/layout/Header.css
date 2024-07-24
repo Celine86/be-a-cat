@@ -29,6 +29,7 @@ header {
 .mytitle {
     font-weight: bold;
     text-transform: uppercase;
+    color: var(--secondary);
 }
 @media (max-width: 1250px) { 
     .mainLogo {
