@@ -34,8 +34,11 @@ export function LivingRoom () {
   return (
     <>
     <div className='chapeau'>
-        <h2>Le Salon !</h2>
-        <h3>Territoire de Teigne, le chat coloc de Patapouf !</h3>
+      <div className='onMouseEnter'>
+          {Object.keys(hoveredZones).map((zone) => (
+            hoveredZones[zone] && <p className='onMouseEnter__p' key={zone}>{messages[zone]}</p>
+          ))}
+      </div>
     </div>    
     <div className="room">
         <img src={livingroom} alt="Clickable" useMap="#image-map" />
@@ -48,11 +51,6 @@ export function LivingRoom () {
         </map>
     </div>
     <div className='info'>
-        <div className='onMouseEnter'>
-            {Object.keys(hoveredZones).map((zone) => (
-            hoveredZones[zone] && <p className='onMouseEnter__p' key={zone}>{messages[zone]}</p>
-            ))}
-        </div>
         {clickedArea && 
         <div className='clicked'>
             <p>Vous avez cliqué sur {clickedArea}</p>

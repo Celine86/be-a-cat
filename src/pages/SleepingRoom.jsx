@@ -33,22 +33,24 @@ export function SleepingRoom () {
 
   return (
     <>
+    <div className='chapeau'>
+      <div className='onMouseEnter'>
+        {Object.keys(hoveredZones).map((zone) => (
+          hoveredZones[zone] && <p className='onMouseEnter__p' key={zone}>{messages[zone]}</p>
+        ))}
+      </div>
+    </div>    
     <div className="room"> 
       <img src={sleepingroom} alt="Clickable" useMap="#image-map" />
       <map name="image-map">
         <area ref={zoneRefs.Zone1} shape="circle" coords="292,202,15" alt="Zone1" onClick={() => handleClick('Zone1')} />
         <area ref={zoneRefs.Zone2} shape="circle" coords="353,294,15" alt="Zone2" onClick={() => handleClick('Zone2')} />
         <area ref={zoneRefs.Zone3} shape="circle" coords="94,273,15" alt="Zone3" onClick={() => handleClick('Zone3')} />
-        <area ref={zoneRefs.Zone4} shape="circle" coords="530,380,15" alt="Zone4" onClick={() => handleClick('Zone4')} />
+        <area ref={zoneRefs.Zone4} shape="circle" coords="524,87,15" alt="Zone4" onClick={() => handleClick('Zone4')} />
         <area ref={zoneRefs.Zone5} shape="circle" coords="340,405,15" alt="Zone5" onClick={() => handleClick('Zone5')} />
       </map>
     </div>
     <div className='info'>
-      <div className='onMouseEnter'>
-        {Object.keys(hoveredZones).map((zone) => (
-          hoveredZones[zone] && <p className='onMouseEnter__p' key={zone}>{messages[zone]}</p>
-        ))}
-      </div>
       {clickedArea && 
       <div className='clicked'>
         <p>Vous avez cliqué sur {clickedArea}</p>
@@ -57,6 +59,5 @@ export function SleepingRoom () {
       }
     </div>
     </>
-
   );
 };

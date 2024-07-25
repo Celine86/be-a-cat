@@ -1,6 +1,7 @@
 import { Modal } from "../common/Modal.jsx";
 import { createPortal } from 'react-dom';
 import { useSwap } from '../../hooks/useSwap.js';
+import './HomeModal.css';
 import patapouf from '/Patapouf_Modal.jpeg';
 
 export function HomeModal() {

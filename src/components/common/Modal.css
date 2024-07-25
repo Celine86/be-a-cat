@@ -9,11 +9,6 @@
     border-radius: 5rem;
     cursor: url(/catPaw-green.png), auto;
 }
-.homeModal {
-    width: 95vw;
-    height: 80vh;
-    margin : 8vh auto;
-}
 .modalBtn {
     cursor: url(/catPaw-green.png), auto;
     background-color: var(--primary-bg-color);
@@ -45,10 +40,6 @@
     justify-content: space-evenly;
     gap: 0.5rem;
 }
-.presentation__patapouf {
-    width: 25rem;
-    height: auto;
-}
 .presentation__texte {
     width: 25rem;
     height: auto;
@@ -60,7 +51,4 @@
 .presentation__texte--center {
     text-align: justify;
     line-height: 1.5rem;
-}
-.notCompatible {
-    text-align: center;
 }

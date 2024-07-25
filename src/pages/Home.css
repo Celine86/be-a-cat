@@ -1,7 +1,14 @@
 .imgMini {
-    width: 250px;
-    height: 250px;
+    width: 450px;
+    height: 500px;
 }
 .navlink :hover {
     cursor: url(/catPaw-yellow.png), auto;
+}
+.rooms {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
