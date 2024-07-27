@@ -1,13 +1,11 @@
+import './HomeModal.css';
+import patapouf from '/Patapouf_Modal.jpeg';
 import { Modal } from "../common/Modal.jsx";
 import { createPortal } from 'react-dom';
 import { useSwap } from '../../hooks/useSwap.js';
-import './HomeModal.css';
-import patapouf from '/Patapouf_Modal.jpeg';
 
 export function HomeModal() {
-
     const [isOpened, swapWindow] = useSwap(true)
-
     return (
         <>
         {isOpened  && (
@@ -24,6 +22,8 @@ export function HomeModal() {
                                         Patapouf est un chat curieux et maladroit, un peu comme tous les chats.<br/> 
                                         A force de toucher à tout il a perdu sa baballe rouge et il est très malheureux.<br/>
                                         Aide Patapouf a retrouver sa magnifique baballe !<br/>
+                                        Des indices se cachent dans le salon et la chambre.<br />
+                                        Passe ta souris partout et note les indices !
                                     </p>
                                 </div>
                             </div>

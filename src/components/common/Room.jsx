@@ -1,10 +1,11 @@
-import { useRef } from 'react';
+import './Room.css';
+import {useState, useRef } from 'react';
 import useMouseEnter from '../../hooks/useMouseEnter.js';
 import useClickedArea from '../../hooks/useClickedArea.js';
-import './Room.css';
 
-export function Room({ zones, messages, imageSrc, mapName }) {
+export function Room({ zones, hoveredmsg, clickedmsg, imageSrc, mapName, onZoneClick }) {
   const [clickedArea, handleClick, resetClickedArea] = useClickedArea();
+  const [clickedMessage, setClickedMessage] = useState('');
 
   const zoneRefs = zones.reduce((acc, zone) => {
     acc[zone.id] = useRef();
@@ -16,12 +17,20 @@ export function Room({ zones, messages, imageSrc, mapName }) {
     return acc;
   }, {});
 
+  const handleAreaClick = (zoneId) => {
+    handleClick(zoneId);
+    setClickedMessage(clickedmsg[zoneId] || 'Zone non reconnue');
+    if (onZoneClick) {
+      onZoneClick(zoneId);
+    }
+  };
+
   return (
     <>
       <div className='chapeau'>
         <div className='onMouseEnter'>
           {zones.map((zone) => (
-            hoveredZones[zone.id] && <p className='onMouseEnter__p' key={zone.id}>{messages[zone.id]}</p>
+            hoveredZones[zone.id] && <p className='onMouseEnter__p' key={zone.id}>{hoveredmsg[zone.id]}</p>
           ))}
         </div>
       </div>
@@ -35,7 +44,7 @@ export function Room({ zones, messages, imageSrc, mapName }) {
               shape="circle"
               coords={zone.coords}
               alt={zone.id}
-              onClick={() => handleClick(zone.id)}
+              onClick={() => handleAreaClick(zone.id)}
             />
           ))}
         </map>
@@ -43,7 +52,7 @@ export function Room({ zones, messages, imageSrc, mapName }) {
       <div className='info'>
         {clickedArea &&
           <div className='clicked'>
-            <p>Vous avez cliqué sur {clickedArea}</p>
+            <p>{clickedMessage}</p>
             <button className="roomBtn" onClick={resetClickedArea}>Je rejoue !</button>
           </div>
         }

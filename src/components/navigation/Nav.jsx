@@ -4,9 +4,7 @@ import { Header } from "../layout/Header.jsx";
 import { Footer } from "../layout/Footer.jsx";
 
 export function Nav() {
-
     const deviceType = useDeviceType();
-
     return (
         <>
             <Header />

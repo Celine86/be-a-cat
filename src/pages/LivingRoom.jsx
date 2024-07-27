@@ -1,5 +1,5 @@
-import { Room } from '../components/common/Room.jsx';
 import livingroom from '/Patapouf_LivingRoom.jpeg';
+import { Room } from '../components/common/Room.jsx';
 
 export function LivingRoom() {
   const zones = [
@@ -10,20 +10,58 @@ export function LivingRoom() {
     { id: 'Zone5', coords: '118,597,15' },
   ];
 
-  const messages = {
+  const hoveredmsg = {
+    Zone1: "Message spécifique pour Zone 1",
+    Zone2: "Message spécifique pour Zone 2",
+    Zone3: "un QRCode ! Que peut-il bien cacher ?",
+    Zone4: "zone4",
+    Zone5: "Message spécifique pour Zone 5",
+  };
+
+  const clickedmsg = {
     Zone1: "Message spécifique pour Zone 1",
     Zone2: "Message spécifique pour Zone 2",
     Zone3: "Message spécifique pour Zone 3",
-    Zone4: "Message spécifique pour Zone 4",
+    Zone4: "zone4",
     Zone5: "Message spécifique pour Zone 5",
+  };
+
+  const handleZoneClick = (zoneId) => {
+    switch (zoneId) {
+      case 'Zone1':
+        console.log("Action spécifique pour Zone 1");
+        // Ajoutez l'action spécifique pour Zone 1 ici
+        break;
+      case 'Zone2':
+        console.log("Action spécifique pour Zone 2");
+        // Ajoutez l'action spécifique pour Zone 2 ici
+        break;
+      case 'Zone3':
+        console.log("Action spécifique pour Zone 3");
+        // Ajoutez l'action spécifique pour Zone 3 ici
+        break;
+      case 'Zone4':
+        console.log("Action spécifique pour Zone 4");
+        // Ajoutez l'action spécifique pour Zone 4 ici
+        break;
+      case 'Zone5':
+        console.log("Action spécifique pour Zone 5");
+        // Ajoutez l'action spécifique pour Zone 5 ici
+        break;
+      default:
+        console.log("Zone non reconnue");
+        // Action par défaut
+    }
   };
 
   return (
     <Room 
       zones={zones} 
-      messages={messages} 
+      hoveredmsg={hoveredmsg}
+      clickedmsg={clickedmsg} 
       imageSrc={livingroom} 
-      mapName="livingroom-map" 
+      mapName="livingroom-map"
+      onZoneClick={handleZoneClick}
     />
   );
 }
