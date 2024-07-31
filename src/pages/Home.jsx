@@ -9,6 +9,7 @@ export function Home() {
 
     return (
         <>
+        <div id="modal"></div>
         <HomeModal />
         <div>
             <h2>Où chercher en premier ?</h2>

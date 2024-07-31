@@ -1,5 +1,5 @@
 import './Room.css';
-import {useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import useMouseEnter from '../../hooks/useMouseEnter.js';
 import useClickedArea from '../../hooks/useClickedArea.js';
 
@@ -53,7 +53,10 @@ export function Room({ zones, hoveredmsg, clickedmsg, imageSrc, mapName, onZoneC
         {clickedArea &&
           <div className='clicked'>
             <p>{clickedMessage}</p>
-            <button className="roomBtn" onClick={resetClickedArea}>Je rejoue !</button>
+            <div>
+              <button className='roomBtn' onClick={resetClickedArea}>Je cherche un autre indice !</button>
+              <button className='roomBtn'>Je tente ma chance !</button>
+            </div>
           </div>
         }
       </div>

@@ -6,6 +6,8 @@ import catPawYellow from '/bigCatPaw-yellow.png';
 
 export function Header() {
     return (
+        <>
+        <div id="modal"></div>
         <header>
             <div className="header__elmt">
                 <a href="/">
@@ -27,5 +29,6 @@ export function Header() {
                 </a>
             </div>
         </header>
+        </>
     )
 }

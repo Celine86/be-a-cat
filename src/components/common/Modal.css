@@ -9,6 +9,12 @@
     border-radius: 5rem;
     cursor: url(/catPaw-green.png), auto;
 }
+.modal {
+    width: 95vw;
+    height: 80vh;
+    margin : 8.5vh auto;
+    z-index: 20;
+}
 .modalBtn {
     cursor: url(/catPaw-green.png), auto;
     background-color: var(--primary-bg-color);

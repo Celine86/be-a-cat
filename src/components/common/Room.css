@@ -43,7 +43,7 @@ area:hover {
 .roomBtn {
     background-color: var(--primary-bg-color);
     padding: 0.15rem;
-    width: 10rem;
+    width: 12rem;
     border: 0.15rem solid var(--secondary);
     color: var(--secondary);
     cursor: url(/catPaw-green.png), auto;

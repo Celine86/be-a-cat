@@ -8,6 +8,7 @@ import { Home } from "./pages/Home.jsx"
 import { Page404 } from "./pages/Page404.jsx"
 import { SleepingRoom } from './pages/SleepingRoom.jsx';
 import { LivingRoom } from './pages/LivingRoom.jsx';
+import { Bretagne } from './pages/Bretagne.jsx';
 
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
         {
           path: "/livingroom",
           element: <LivingRoom />,
+        },
+        {
+        path: "/bretagne",
+        element: <Bretagne />,
         },
       ],
     },
