@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
 import { useDeviceType } from '../../hooks/useDeviceType.js';
-import { Header } from "../layout/Header.jsx";
-import { Footer } from "../layout/Footer.jsx";
+import { Header } from "./Header.jsx";
+import { Footer } from "./Footer.jsx";
 
-export function Nav() {
+export function General() {
     const deviceType = useDeviceType();
     return (
         <>

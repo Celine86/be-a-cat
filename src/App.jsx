@@ -3,18 +3,19 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import { Nav } from "./components/navigation/Nav.jsx"
+import { General } from "./components/layout/General.jsx"
 import { Home } from "./pages/Home.jsx"
 import { Page404 } from "./pages/Page404.jsx"
 import { SleepingRoom } from './pages/SleepingRoom.jsx';
 import { LivingRoom } from './pages/LivingRoom.jsx';
 import { Bretagne } from './pages/Bretagne.jsx';
+import { Input } from './pages/Input.jsx';
 
 
 function App() {
   const router = createBrowserRouter([
     {
-      element: <Nav />,
+      element: <General />,
       errorElement: <Page404 />,
       children: [
         {
@@ -28,6 +29,10 @@ function App() {
         {
           path: "/livingroom",
           element: <LivingRoom />,
+        },
+        {
+          path: "/input",
+          element: <Input />,
         },
         {
         path: "/bretagne",
