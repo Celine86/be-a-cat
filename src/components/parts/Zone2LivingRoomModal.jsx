@@ -1,22 +1,9 @@
-import { Modal } from "../common/Modal.jsx";
-import { createPortal } from 'react-dom';
+import {ZoneModal} from '../common/ZoneModal.jsx'
 
-export function Zone2LivingRoom({isOpen, onClose}) {
+export function Zone2LivingRoom({ isOpen, onClose }) {
     return (
-        <>
-        {isOpen  && (
-        <div>
-            {createPortal (
-                <Modal>
-                    <div className='modalContainer'>
-                        <h2 className='modalContainer--title'>Zone2</h2>
-                        <button className="modalBtn" onClick={onClose}>J'ai compris !</button>
-                    </div>
-                </Modal>
-                , document.getElementById("modal")
-            )}
-        </div>
-        )}
-        </>
-    )
+        <ZoneModal isOpen={isOpen} onClose={onClose} title="Zone2">
+            <p>Coucou Zone 2</p>
+        </ZoneModal>
+    );
 }
