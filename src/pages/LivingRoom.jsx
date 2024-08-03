@@ -5,7 +5,6 @@ import { Zone1LivingRoom } from '../components/parts/Zone1LivingRoomModal.jsx';
 import { Zone2LivingRoom } from '../components/parts/Zone2LivingRoomModal.jsx';
 import { Zone3LivingRoom } from '../components/parts/Zone3LivingRoomModal.jsx';
 import { Zone4LivingRoom } from '../components/parts/Zone4LivingRoomModal.jsx';
-import { Zone5LivingRoom } from '../components/parts/Zone5LivingRoomModal.jsx';
 
 export function LivingRoom() {
   const zones = [
@@ -13,30 +12,26 @@ export function LivingRoom() {
     { id: 'Zone2', coords: '400,579,15' },
     { id: 'Zone3', coords: '30,195,15' },
     { id: 'Zone4', coords: '286,157,15' },
-    { id: 'Zone5', coords: '118,597,15' },
   ];
 
   const hoveredmsg = {
-    Zone1: "Message spécifique pour Zone 1",
-    Zone2: "Message spécifique pour Zone 2",
-    Zone3: "Un QRCode ! Que peut-il bien cacher ?",
-    Zone4: "zone4",
-    Zone5: "Message spécifique pour Zone 5",
+    Zone1: 'Cette affiche aurait-elle une signification ?',
+    Zone2: 'Une télécommande pleine de touches !',
+    Zone3: 'Un QRCode ! Que peut-il bien cacher ?',
+    Zone4: 'Le portrait de Teigne !',
   };
 
   const clickedmsg = {
-    Zone1: "As-tu trouvé le mot mystère ?",
-    Zone2: "Prêt à rendre Patapouf heureux ?",
-    Zone3: "Peut-être un indice sur le super site indiqué par le QRCode ?",
-    Zone4: "Où peut bien se trouver la magnifique baballe ?",
-    Zone5: "Patapouf va-t-il être heureux bientôt ?",
+    Zone1: 'As-tu trouvé le mot mystère ?',
+    Zone2: 'Prêt à rendre Patapouf heureux ?',
+    Zone3: 'Peut-être un indice sur le super site indiqué par le QRCode ?',
+    Zone4: 'Patapouf va-t-il trouver sa baballe ?',
   };
 
   const [isZone1Open, toggleZone1] = useSwap(false);
   const [isZone2Open, toggleZone2] = useSwap(false);
   const [isZone3Open, toggleZone3] = useSwap(false);
   const [isZone4Open, toggleZone4] = useSwap(false);
-  const [isZone5Open, toggleZone5] = useSwap(false);
 
   const handleZoneClick = (zoneId) => {
     switch (zoneId) {
@@ -52,9 +47,6 @@ export function LivingRoom() {
       case 'Zone4':
         toggleZone4();
         break;
-      case 'Zone5':
-        toggleZone5();
-        break;
       default:
         // Action par défaut
     }
@@ -67,14 +59,13 @@ export function LivingRoom() {
         hoveredmsg={hoveredmsg}
         clickedmsg={clickedmsg} 
         imageSrc={livingroom} 
-        mapName="livingroom-map"
+        mapName='livingroom-map'
         onZoneClick={handleZoneClick}
       />
       {isZone1Open && <Zone1LivingRoom isOpen={isZone1Open} onClose={toggleZone1} />}
       {isZone2Open && <Zone2LivingRoom isOpen={isZone2Open} onClose={toggleZone2} />}
       {isZone3Open && <Zone3LivingRoom isOpen={isZone3Open} onClose={toggleZone3} />}
       {isZone4Open && <Zone4LivingRoom isOpen={isZone4Open} onClose={toggleZone4} />}
-      {isZone5Open && <Zone5LivingRoom isOpen={isZone5Open} onClose={toggleZone5} />}
     </>
   );
 }

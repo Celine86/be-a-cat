@@ -2,10 +2,10 @@ import './App.css';
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom"
-import { General } from "./components/layout/General.jsx"
-import { Home } from "./pages/Home.jsx"
-import { Page404 } from "./pages/Page404.jsx"
+} from 'react-router-dom'
+import { General } from './components/layout/General.jsx'
+import { Home } from './pages/Home.jsx'
+import { Page404 } from './pages/Page404.jsx'
 import { SleepingRoom } from './pages/SleepingRoom.jsx';
 import { LivingRoom } from './pages/LivingRoom.jsx';
 import { Bretagne } from './pages/Bretagne.jsx';
@@ -19,23 +19,23 @@ function App() {
       errorElement: <Page404 />,
       children: [
         {
-          path: "/",
+          path: '/',
           element: <Home />,
         },
         {
-          path: "/sleepingroom",
+          path: '/sleepingroom',
           element: <SleepingRoom />,
         },
         {
-          path: "/livingroom",
+          path: '/livingroom',
           element: <LivingRoom />,
         },
         {
-          path: "/input",
+          path: '/input',
           element: <Input />,
         },
         {
-        path: "/bretagne",
+        path: '/bretagne',
         element: <Bretagne />,
         },
       ],

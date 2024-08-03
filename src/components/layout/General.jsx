@@ -1,7 +1,7 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 import { useDeviceType } from '../../hooks/useDeviceType.js';
-import { Header } from "./Header.jsx";
-import { Footer } from "./Footer.jsx";
+import { Header } from './Header.jsx';
+import { Footer } from './Footer.jsx';
 
 export function General() {
     const deviceType = useDeviceType();

@@ -7,7 +7,7 @@ export function Tooltip ({ imageSrc, alt, tooltip, imageClass }) {
 
   return (
     <div 
-      className="tooltipBlock" 
+      className='tooltipBlock' 
       style={{ 
         position: 'relative', 
         display: 'inline-block' 

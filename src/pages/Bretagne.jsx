@@ -5,7 +5,7 @@ export function Bretagne () {
     return (
         <>
             <h2>LA PRECIEUSE BABALLE !</h2>
-            <img className="precieuseBaballe" src={baballe} />
+            <img className='precieuseBaballe' src={baballe} />
         </>
     )
 }

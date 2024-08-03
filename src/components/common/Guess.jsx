@@ -21,12 +21,12 @@ export function Guess () {
     return (
         <form onSubmit={handleSubmit}>
             <input
-                type="text"
+                type='text'
                 value={inputValue}
                 onChange={handleChange}
-                placeholder="Tapez ici..."
+                placeholder='Quel est le mot mystère ?'
             />
-            <button type="submit">Submit</button>
+            <button type='submit'>Submit</button>
         </form>
     );
 };

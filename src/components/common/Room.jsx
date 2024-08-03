@@ -1,5 +1,6 @@
 import './Room.css';
 import { useState, useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 import useMouseEnter from '../../hooks/useMouseEnter.js';
 import useClickedArea from '../../hooks/useClickedArea.js';
 
@@ -34,14 +35,14 @@ export function Room({ zones, hoveredmsg, clickedmsg, imageSrc, mapName, onZoneC
           ))}
         </div>
       </div>
-      <div className="room">
-        <img src={imageSrc} alt="Clickable" useMap={`#${mapName}`} />
+      <div className='room'>
+        <img src={imageSrc} alt='Clickable' useMap={`#${mapName}`} />
         <map name={mapName}>
           {zones.map((zone) => (
             <area
               key={zone.id}
               ref={zoneRefs[zone.id]}
-              shape="circle"
+              shape='circle'
               coords={zone.coords}
               alt={zone.id}
               onClick={() => handleAreaClick(zone.id)}
@@ -55,7 +56,8 @@ export function Room({ zones, hoveredmsg, clickedmsg, imageSrc, mapName, onZoneC
             <p>{clickedMessage}</p>
             <div>
               <button className='roomBtn' onClick={resetClickedArea}>Je cherche un autre indice !</button>
-              <button className='roomBtn'>Je tente ma chance !</button>
+
+              <NavLink to='/input'><button className='roomBtn'>Je tente ma chance !</button></NavLink>
             </div>
           </div>
         }
