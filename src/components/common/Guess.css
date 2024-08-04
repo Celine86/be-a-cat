@@ -1,0 +1,13 @@
+input[type='text'] {
+    width: 20rem;
+    height: 1.25rem;
+    border: 0.15rem solid var(--secondary);
+    background-color: var(--primary-bg-color);
+    color: var(--primary);
+    padding: 0.25rem;
+    margin-top: 1rem;
+}
+input[type='text']:focus {
+    border: 0.15rem solid var(--tertiary);
+    outline: none;
+}

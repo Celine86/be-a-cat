@@ -1,0 +1,6 @@
+.countdown {
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 5rem;
+    color: var(--tertiary);
+}

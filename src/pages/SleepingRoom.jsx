@@ -55,7 +55,10 @@ export function SleepingRoom() {
 
   return (
     <>
-      <NavLink className='roomNav' to='/livingroom'>Chercher dans le salon</NavLink>
+      <div className='roomNav'>
+        <NavLink className='roomNav' to='/livingroom'>Chercher dans le salon</NavLink>
+        <NavLink className='roomNav' to='/input'>J'ai trouvé !</NavLink>
+      </div>
       <Room 
         zones={zones} 
         hoveredmsg={hoveredmsg}

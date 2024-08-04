@@ -1,3 +1,4 @@
+import './Guess.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -6,7 +7,7 @@ export function Guess () {
     const navigate = useNavigate();
 
     const handleChange = (event) => {
-        setInputValue(event.target.value);
+        setInputValue(event.target.value.toLowerCase());
     };
 
     const handleSubmit = (event) => {
@@ -26,7 +27,6 @@ export function Guess () {
                 onChange={handleChange}
                 placeholder='Quel est le mot mystère ?'
             />
-            <button type='submit'>Submit</button>
         </form>
     );
 };
