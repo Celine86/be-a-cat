@@ -1,6 +1,10 @@
 
+.roomNav {
+    height: 2vh;
+    padding: 1rem;
+}
 .chapeau {
-    height: 7vh;
+    height: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -7,8 +7,8 @@
 }
 .modal {
     width: 95vw;
-    height: 80vh;
-    margin : 8.5vh auto;
+    height: 84vh;
+    margin : 6vh auto;
     z-index: 20;
 }
 .modalBtn {

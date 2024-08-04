@@ -56,7 +56,6 @@ export function Room({ zones, hoveredmsg, clickedmsg, imageSrc, mapName, onZoneC
             <p>{clickedMessage}</p>
             <div>
               <button className='roomBtn' onClick={resetClickedArea}>Je cherche un autre indice !</button>
-
               <NavLink to='/input'><button className='roomBtn'>Je tente ma chance !</button></NavLink>
             </div>
           </div>

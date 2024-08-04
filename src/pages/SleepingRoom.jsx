@@ -1,4 +1,5 @@
 import sleepingroom from '/Patapouf_SleepingRoom.jpeg';
+import { NavLink } from 'react-router-dom';
 import { Room } from '../components/common/Room.jsx';
 
 export function SleepingRoom() {
@@ -43,13 +44,16 @@ export function SleepingRoom() {
   };
 
   return (
-    <Room 
-      zones={zones} 
-      hoveredmsg={hoveredmsg}
-      clickedmsg={clickedmsg} 
-      imageSrc={sleepingroom} 
-      mapName='sleepingroom-map'
-      onZoneClick={handleZoneClick}
-    />
+    <>
+      <NavLink className='roomNav' to='/livingroom'>Chercher dans le salon</NavLink>
+      <Room 
+        zones={zones} 
+        hoveredmsg={hoveredmsg}
+        clickedmsg={clickedmsg} 
+        imageSrc={sleepingroom} 
+        mapName='sleepingroom-map'
+        onZoneClick={handleZoneClick}
+      />
+    </>
   );
 }

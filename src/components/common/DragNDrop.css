@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 45rem;
+}
+.list {
+    width: 100%;
+    height: 30rem;
+    border: 0.25rem solid var(--secondary);
+    min-height: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.item {
+    height: 2.18rem;
+    padding: 0.58rem;
+    margin-bottom: 0rem;
+    background-color: var(--secondary);
+    border: 0.15rem solid var(--tertiary);
+    cursor: pointer;
+}
+.listA {
+    width: 100%;
+    height: 30rem;
+    border: 0.25rem solid var(--secondary);
+    min-height: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-image: url(/404.jpeg);
+}
