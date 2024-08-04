@@ -1,9 +1,11 @@
-import {ZoneModal} from '../common/ZoneModal.jsx'
+import { ZoneModal } from '../common/ZoneModal.jsx'
+import Indice1 from '/Indice1.jpeg';
 
 export function Zone4LivingRoom({ isOpen, onClose }) {
     return (
-        <ZoneModal isOpen={isOpen} onClose={onClose} title='Zone4'>
-            <p>Coucou Zone 4</p>
+        <ZoneModal isOpen={isOpen} onClose={onClose}>
+            <p>Je suis la 3eme lettre du mot désignant l'animal sur l'image ci-dessous</p>
+            <img className='imgClue' src={Indice1} />
         </ZoneModal>
     );
 }

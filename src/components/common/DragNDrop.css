@@ -18,14 +18,44 @@
     margin-bottom: 0rem;
     background-color: var(--secondary);
     border: 0.15rem solid var(--tertiary);
-    cursor: url(/catPaw-yellow.png);
+    cursor: url(/catPaw-yellow.png), auto;
 }
-.listA {
+.item:active {
+    cursor: url(/catPaw-yellow.png), auto;
+}
+.indice3 {
     width: 100%;
     height: 30rem;
     border: 0.25rem solid var(--secondary);
     min-height: 2rem;
     margin: 0.5rem;
     padding: 0.5rem;
-    background-image: url(/404.jpeg);
+    background-image: url(/Indice3.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.indice4 {
+    width: 100%;
+    height: 30rem;
+    border: 0.25rem solid var(--secondary);
+    min-height: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-image: url(/Indice4.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.indice5 {
+    width: 100%;
+    height: 30rem;
+    border: 0.25rem solid var(--secondary);
+    min-height: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-image: url(/Indice5.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }

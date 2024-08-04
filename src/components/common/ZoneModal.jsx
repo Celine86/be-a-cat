@@ -4,7 +4,7 @@ import closebtnYellow from '/close-yellow.png';
 import { Modal } from './Modal.jsx';
 import { createPortal } from 'react-dom';
 
-export function ZoneModal({ isOpen, onClose, title, children }) {
+export function ZoneModal({ isOpen, onClose, children }) {
     return (
         <>
         {isOpen && (
@@ -20,7 +20,6 @@ export function ZoneModal({ isOpen, onClose, title, children }) {
                             />
                         </div>
                         <div className='modalContainer'>
-                            <h2 className='modalContainer--title'>{title}</h2>
                             {children}
                         </div>
 
