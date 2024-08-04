@@ -19,7 +19,7 @@ function App() {
       errorElement: <Page404 />,
       children: [
         {
-          path: '/home',
+          path: '/',
           element: <Home />,
         },
         {
