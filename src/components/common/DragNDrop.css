@@ -18,7 +18,7 @@
     margin-bottom: 0rem;
     background-color: var(--secondary);
     border: 0.15rem solid var(--tertiary);
-    cursor: pointer;
+    cursor: url(/catPaw-yellow.png);
 }
 .listA {
     width: 100%;
