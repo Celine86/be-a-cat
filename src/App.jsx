@@ -1,6 +1,6 @@
 import './App.css';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from 'react-router-dom'
 import { General } from './components/layout/General.jsx'
@@ -13,7 +13,7 @@ import { Input } from './pages/Input.jsx';
 
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       element: <General />,
       errorElement: <Page404 />,
