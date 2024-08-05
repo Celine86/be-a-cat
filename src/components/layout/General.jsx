@@ -12,7 +12,7 @@ export function General() {
                 <main>
                     {deviceType === 'mobileOrTablet' ? (
                         <div className='notCompatible'>
-                            <p><span className='notCompatible--span'>Désolé le site n'est pas compatible avec les mobiles et tablettes</span></p>
+                            <p><span className='notCompatible--span'>Désolé le site n'est pas compatible avec les écrans de moins de 1024px</span></p>
                             <img className='notCompatible--img' src={NotCompatible} />
                         </div>
                     ) : (
