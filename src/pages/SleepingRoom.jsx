@@ -56,8 +56,11 @@ export function SleepingRoom() {
   return (
     <>
       <div className='roomNav'>
-        <NavLink className='roomNav' to='/livingroom'>Chercher dans le salon</NavLink>
-        <NavLink className='roomNav' to='/input'>J'ai trouvé !</NavLink>
+        <NavLink className='roomNav--link' to='/livingroom'>Chercher dans le salon</NavLink>
+        <NavLink className='roomNav--link' to='/input'>J'ai trouvé !</NavLink>
+      </div>
+      <div className='roomIndications'>
+        <p>Passe ta souris partout pour trouver 4 indices afin de reconstituer le mot mystère composé de 8 lettres !</p>
       </div>
       <Room 
         zones={zones} 

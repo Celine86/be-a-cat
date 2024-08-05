@@ -3,7 +3,7 @@ footer {
     flex-direction: row;
     justify-content: flex-end;
     border-top: 0.15rem solid var(--tertiary);
-    height: 5vh;
+    height: 2vh;
 }
 .socialIcons {
     display: flex;

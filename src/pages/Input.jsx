@@ -21,7 +21,8 @@ export function Input() {
 
     return (
         <>
-            <p><span className='countdown'>{countdown}</span></p>
+            <p className='indication'><span className='countdown'>{countdown}</span></p>
+            <p className='indication'>Tape dans l'ordre les <span className='highlight'>8</span> lettres du mot mystère !</p>
             <Guess />
         </>
     )

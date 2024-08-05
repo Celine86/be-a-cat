@@ -1,7 +1,17 @@
 
 .roomNav {
-    height: 2vh;
-    padding: 1rem;
+    height: 1vh;
+    padding: 1rem 0 0.5rem 0;
+}
+.roomNav--link {
+    padding: 0 1rem;
+}
+.roomIndications {
+    height: 1vh;
+    padding: 0.5rem 0 1rem 0;
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: bold;
 }
 .chapeau {
     height: 5vh;
@@ -36,6 +46,9 @@ area:hover {
 }
 .onMouseEnter__p {
     text-align: center;
+    color: var(--tertiary);
+    font-weight: bold;
+    font-size: 1rem;
 }
 .clicked {
     display: flex;
