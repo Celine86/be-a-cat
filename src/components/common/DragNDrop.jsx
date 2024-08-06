@@ -85,6 +85,4 @@ export function DragNDrop({className}) {
         </div>
     </div>
   );
-
-
 }

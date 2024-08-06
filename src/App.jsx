@@ -4,12 +4,12 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import { General } from './components/layout/General.jsx'
-import { Home } from './pages/Home.jsx'
-import { Page404 } from './pages/Page404.jsx'
-import { SleepingRoom } from './pages/SleepingRoom.jsx';
-import { LivingRoom } from './pages/LivingRoom.jsx';
-import { Bretagne } from './pages/Bretagne.jsx';
-import { Input } from './pages/Input.jsx';
+import { Home } from './pages/Home/Home.jsx'
+import { Page404 } from './pages/Page404/Page404.jsx'
+import { SleepingRoom } from './pages/SleepingRoom/SleepingRoom.jsx';
+import { LivingRoom } from './pages/LivingRoom/LivingRoom.jsx';
+import { Bretagne } from './pages/Bretagne/Bretagne.jsx';
+import { Input } from './pages/Input/Input.jsx';
 
 
 function App() {

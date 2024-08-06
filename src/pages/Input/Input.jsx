@@ -1,7 +1,7 @@
 import './Input.css';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Guess } from '../components/common/Guess.jsx';
+import { Guess } from '../../components/common/Guess.jsx';
 
 
 export function Input() {

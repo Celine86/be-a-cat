@@ -1,18 +1,18 @@
 import livingroom from '/Patapouf_LivingRoom.jpeg';
 import { NavLink } from 'react-router-dom';
-import { useSwap } from '../hooks/useSwap.js';
-import { Room } from '../components/common/Room.jsx';
-import { Zone1LivingRoom } from '../components/parts/Zone1LivingRoomModal.jsx';
-import { Zone2LivingRoom } from '../components/parts/Zone2LivingRoomModal.jsx';
-import { Zone3LivingRoom } from '../components/parts/Zone3LivingRoomModal.jsx';
-import { Zone4LivingRoom } from '../components/parts/Zone4LivingRoomModal.jsx';
+import { useSwap } from '../../hooks/useSwap.js';
+import { Room } from '../../components/common/Room.jsx';
+import { Zone1LivingRoom } from '../../components/parts/Zone1LivingRoomModal.jsx';
+import { Zone2LivingRoom } from '../../components/parts/Zone2LivingRoomModal.jsx';
+import { Zone3LivingRoom } from '../../components/parts/Zone3LivingRoomModal.jsx';
+import { Zone4LivingRoom } from '../../components/parts/Zone4LivingRoomModal.jsx';
 
 export function LivingRoom() {
   const zones = [
-    { id: 'Zone1', coords: '535,190,15' },
-    { id: 'Zone2', coords: '400,579,15' },
-    { id: 'Zone3', coords: '30,195,15' },
-    { id: 'Zone4', coords: '286,157,15' },
+    { id: 'Zone1', coords: '448,152,25' },
+    { id: 'Zone2', coords: '325,483,25' },
+    { id: 'Zone3', coords: '15,149,25' },
+    { id: 'Zone4', coords: '240,122,25' },
   ];
 
   const hoveredmsg = {

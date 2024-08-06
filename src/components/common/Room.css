@@ -30,8 +30,8 @@
 }
 .room img {
     display: block;
-    width: 624px;
-    height: 624px;
+    width: 524px;
+    height: 524px;
 }
 area:hover {
     cursor: url(/catPaw-yellow.png), auto;

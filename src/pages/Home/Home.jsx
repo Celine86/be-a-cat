@@ -1,9 +1,9 @@
 import './Home.css';
 import SleepingRoom from '/Patapouf_SleepingRoom.jpeg';
 import LivingRoom from '/Patapouf_LivingRoom.jpeg';
-import { HomeModal } from '../components/parts/HomeModal.jsx';
+import { HomeModal } from '../../components/parts/HomeModal.jsx';
 import { NavLink } from 'react-router-dom';
-import { Tooltip } from '../components/common/Tooltip.jsx';
+import { Tooltip } from '../../components/common/Tooltip.jsx';
 
 export function Home() {
 

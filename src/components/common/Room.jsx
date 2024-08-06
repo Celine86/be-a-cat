@@ -1,12 +1,14 @@
 import './Room.css';
-import { useState, useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useRef } from 'react';
+//import { useState, useRef } from 'react';
+//import { NavLink } from 'react-router-dom';
 import useMouseEnter from '../../hooks/useMouseEnter.js';
-import useClickedArea from '../../hooks/useClickedArea.js';
+//import useClickedArea from '../../hooks/useClickedArea.js';
 
-export function Room({ zones, hoveredmsg, clickedmsg, imageSrc, mapName, onZoneClick }) {
-  const [clickedArea, handleClick, resetClickedArea] = useClickedArea();
-  const [clickedMessage, setClickedMessage] = useState('');
+export function Room({ zones, hoveredmsg, /*clickedmsg,*/ imageSrc, mapName, onZoneClick }) {
+  //const [handleClick] = useClickedArea();
+  //const [clickedArea, handleClick, resetClickedArea] = useClickedArea();
+  //const [clickedMessage, setClickedMessage] = useState('');
 
   const zoneRefs = zones.reduce((acc, zone) => {
     acc[zone.id] = useRef();
@@ -18,13 +20,21 @@ export function Room({ zones, hoveredmsg, clickedmsg, imageSrc, mapName, onZoneC
     return acc;
   }, {});
 
+  const handleClick = (zoneId) => {
+    if (onZoneClick) {
+      onZoneClick(zoneId);
+    }
+  }
+
+  /*
   const handleAreaClick = (zoneId) => {
     handleClick(zoneId);
-    setClickedMessage(clickedmsg[zoneId] || 'Zone non reconnue');
+    //setClickedMessage(clickedmsg[zoneId] || 'Zone non reconnue');
     if (onZoneClick) {
       onZoneClick(zoneId);
     }
   };
+  */
 
   return (
     <>
@@ -45,12 +55,14 @@ export function Room({ zones, hoveredmsg, clickedmsg, imageSrc, mapName, onZoneC
               shape='circle'
               coords={zone.coords}
               alt={zone.id}
-              onClick={() => handleAreaClick(zone.id)}
+              onClick={() => handleClick(zone.id)}
+              //onClick={() => handleAreaClick(zone.id)}
             />
           ))}
         </map>
       </div>
       <div className='info'>
+        {/*
         {clickedArea &&
           <div className='clicked'>
             <p>{clickedMessage}</p>
@@ -60,6 +72,7 @@ export function Room({ zones, hoveredmsg, clickedmsg, imageSrc, mapName, onZoneC
             </div>
           </div>
         }
+        */}
       </div>
     </>
   );
