@@ -37,7 +37,12 @@ export function DragNDrop({className}) {
         });
       }
     } else {
-      addToList(prev => [...prev, item]);
+      addToList(prev => {
+        if (prev.some(i => i.id === item.id)) {
+          return prev;
+        }
+        return [...prev, item];
+      });
       removeFromList(prev => prev.filter(i => i.id !== item.id));
     }
   };
@@ -65,7 +70,7 @@ export function DragNDrop({className}) {
             ))}
         </div>
         <div className="list" onDrop={e => handleDrop(e, 'listB')} onDragOver={handleDragOver}>
-            {listB.map((item) => (
+            {listB.map((item, index) => (
             <div
                 key={item.id}
                 className="item"
