@@ -34,6 +34,7 @@ export function Home() {
                 </NavLink>
             </nav>
         </div>
+        <NavLink className='generalBtn' to='/input'>Je sais où est la baballe !!</NavLink>
         </>
     )
 }

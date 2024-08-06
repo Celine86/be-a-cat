@@ -4,7 +4,8 @@ import { ChangeDiv } from '../common/ChangeDiv.jsx';
 export function Zone2SleepingRoom({ isOpen, onClose }) {
     return (
         <ZoneModal isOpen={isOpen} onClose={onClose}>
-            <p>Quel est le numéro du département Côtes d'Armor ? </p>
+            <p>On m'obtient si l'on additionne le nombre 8 au nombre 14. <br />
+            Je suis également le numéro du département des Côtes d'Armor.</p>
             <ChangeDiv targetNumber={22} secretMessage="La lettre mystère est 'g'" />
         </ZoneModal>
     );

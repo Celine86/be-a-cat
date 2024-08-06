@@ -1,14 +1,12 @@
 import './Room.css';
 import { useRef } from 'react';
-//import { useState, useRef } from 'react';
-//import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import useMouseEnter from '../../hooks/useMouseEnter.js';
-//import useClickedArea from '../../hooks/useClickedArea.js';
 
-export function Room({ zones, hoveredmsg, /*clickedmsg,*/ imageSrc, mapName, onZoneClick }) {
-  //const [handleClick] = useClickedArea();
-  //const [clickedArea, handleClick, resetClickedArea] = useClickedArea();
-  //const [clickedMessage, setClickedMessage] = useState('');
+export function Room({ zones, hoveredmsg, imageSrc, mapName, onZoneClick }) {
+
+  const location = useLocation();
+  const isInLivingRoom = location.pathname === '/livingroom';
 
   const zoneRefs = zones.reduce((acc, zone) => {
     acc[zone.id] = useRef();
@@ -26,53 +24,49 @@ export function Room({ zones, hoveredmsg, /*clickedmsg,*/ imageSrc, mapName, onZ
     }
   }
 
-  /*
-  const handleAreaClick = (zoneId) => {
-    handleClick(zoneId);
-    //setClickedMessage(clickedmsg[zoneId] || 'Zone non reconnue');
-    if (onZoneClick) {
-      onZoneClick(zoneId);
-    }
-  };
-  */
-
   return (
     <>
-      <div className='chapeau'>
-        <div className='onMouseEnter'>
-          {zones.map((zone) => (
-            hoveredZones[zone.id] && <p className='onMouseEnter__p' key={zone.id}>{hoveredmsg[zone.id]}</p>
-          ))}
-        </div>
-      </div>
       <div className='room'>
-        <img src={imageSrc} alt='Clickable' useMap={`#${mapName}`} />
-        <map name={mapName}>
-          {zones.map((zone) => (
-            <area
-              key={zone.id}
-              ref={zoneRefs[zone.id]}
-              shape='circle'
-              coords={zone.coords}
-              alt={zone.id}
-              onClick={() => handleClick(zone.id)}
-              //onClick={() => handleAreaClick(zone.id)}
-            />
-          ))}
-        </map>
-      </div>
-      <div className='info'>
-        {/*
-        {clickedArea &&
-          <div className='clicked'>
-            <p>{clickedMessage}</p>
-            <div>
-              <button className='roomBtn' onClick={resetClickedArea}>Je cherche un autre indice !</button>
-              <NavLink to='/input'><button className='roomBtn'>Je tente ma chance !</button></NavLink>
+        <div className='roomAside'>
+          <div className='roomNav'>
+            <p className='roomNav--indication'>Des outils !</p>
+            <NavLink className='roomNav--link' to={isInLivingRoom ? '/sleepingroom' : '/livingroom'}>
+              {isInLivingRoom ? 'La chambre' : 'Le salon'}
+            </NavLink>
+            <NavLink className='roomNav--link' to='/clues'>Où cliquer ?</NavLink>
+            <p className='roomNav--indication'>Baballe ?</p>
+            <NavLink className='roomNav--link' to='/input'>J'ai trouvé !</NavLink>
+          </div>
+        </div>
+        <div className='roomMain'>
+          <div className='roomIndications'>
+              <p>Passe ta souris partout pour trouver 4 indices afin de reconstituer le mot mystère composé de 8 lettres !</p>
+          </div>
+          <div className='roomHeader'>
+            <div className='onMouseEnter'>
+              {zones.map((zone) => (
+                hoveredZones[zone.id] && <p className='onMouseEnter__p' key={zone.id}>{hoveredmsg[zone.id]}</p>
+              ))}
             </div>
           </div>
-        }
-        */}
+          <div className='roomPlayzone'>
+            <div className='roomPlayzoneImgFrame'>
+              <img src={imageSrc} alt='Clickable' useMap={`#${mapName}`} />
+              <map name={mapName}>
+                {zones.map((zone) => (
+                  <area
+                    key={zone.id}
+                    ref={zoneRefs[zone.id]}
+                    shape='circle'
+                    coords={zone.coords}
+                    alt={zone.id}
+                    onClick={() => handleClick(zone.id)}
+                  />
+                ))}
+              </map>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

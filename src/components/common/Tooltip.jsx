@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import useMouseEnter from '../../hooks/useMouseEnter.js';
 
-export function Tooltip ({ imageSrc, alt, tooltip, imageClass }) {
+export function Tooltip ({ id, imageSrc, alt, tooltip, imageClass, onClick }) {
   const ref = useRef(null);
   const isHovered = useMouseEnter(ref);
 
@@ -14,7 +14,7 @@ export function Tooltip ({ imageSrc, alt, tooltip, imageClass }) {
       }}
       ref={ref}
     >
-      <img src={imageSrc} alt={alt} className={imageClass} />
+      <img src={imageSrc} alt={alt} className={imageClass} onClick={onClick} />
       {isHovered && (
         <div style={{
           position: 'absolute',

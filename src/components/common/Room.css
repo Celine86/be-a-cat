@@ -1,44 +1,67 @@
 
+.room {
+    display: flex;
+    flex-direction: row;
+}
+.roomAside {
+    border-right: 0.25rem solid var(--secondary);
+}
 .roomNav {
-    height: 1vh;
-    padding: 1rem 0 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 0rem 1rem 0rem 0rem;
+    margin: auto;
 }
 .roomNav--link {
-    padding: 0 1rem;
+    padding: 0 0 0.10rem 0;
+}
+.roomNav--link:hover {
+    padding: 0 0 0.10rem 0;
+    cursor: url(/catPaw-green.png), auto;
+}
+.roomNav--indication {
+    padding: 0.5rem 0 0.5rem 0; 
+    font-weight: bold;
+}
+.roomMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .roomIndications {
-    height: 1vh;
-    padding: 0.5rem 0 1rem 0;
+    height: 2vh;
+    padding: 0 0 0 0;
     color: var(--primary);
     font-size: 1rem;
     font-weight: bold;
 }
-.chapeau {
+.roomHeader {
     height: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.room {
-    width: 95vw;
+.roomPlayzone {
+    width: 80vw;
     height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
-.room img {
+.roomPlayzoneImgFrame {
+    padding: 2rem 0 0 0;
+}
+.roomPlayzone img {
     display: block;
     width: 524px;
     height: 524px;
 }
 area:hover {
     cursor: url(/catPaw-yellow.png), auto;
-}
-.info {
-    height: 8vh;
-    width: 50vh;
 }
 .onMouseEnter {
     height: 2vh;
@@ -49,24 +72,4 @@ area:hover {
     color: var(--tertiary);
     font-weight: bold;
     font-size: 1rem;
-}
-.clicked {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-}
-.roomBtn {
-    background-color: var(--primary-bg-color);
-    padding: 0.15rem;
-    width: 12rem;
-    border: 0.15rem solid var(--secondary);
-    color: var(--secondary);
-    cursor: url(/catPaw-green.png), auto;
-}
-.roomBtn:hover {
-    border: 0.15rem solid var(--tertiary);
-    color: var(--tertiary);
-    cursor: url(/catPaw-yellow.png), auto;
 }

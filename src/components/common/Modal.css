@@ -2,11 +2,11 @@
     background-color: var(--primary-bg-color);
     color: var(--primary);
     border: 0.15rem solid var(--secondary);
-    border-radius: 5rem;
+    /*border-radius: 5rem;*/
     cursor: url(/catPaw-green.png), auto;
 }
 .modal {
-    width: 95vw;
+    width: 98vw;
     height: 87vh;
     margin : 6vh auto;
     z-index: 20;

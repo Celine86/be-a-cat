@@ -1,5 +1,4 @@
 import livingroom from '/Patapouf_LivingRoom.jpeg';
-import { NavLink } from 'react-router-dom';
 import { useSwap } from '../../hooks/useSwap.js';
 import { Room } from '../../components/common/Room.jsx';
 import { Zone1LivingRoom } from '../../components/parts/Zone1LivingRoomModal.jsx';
@@ -55,13 +54,6 @@ export function LivingRoom() {
 
   return (
     <>
-      <div className='roomNav'>
-        <NavLink className='roomNav--link' to='/sleepingroom'>Chercher dans la chambre</NavLink>
-        <NavLink className='roomNav--link' to='/input'>J'ai trouvé !</NavLink>
-      </div>
-      <div className='roomIndications'>
-        <p>Passe ta souris partout pour trouver 4 indices afin de reconstituer le mot mystère composé de 8 lettres !</p>
-      </div>
       <Room 
         zones={zones} 
         hoveredmsg={hoveredmsg}

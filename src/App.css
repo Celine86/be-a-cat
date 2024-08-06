@@ -52,3 +52,18 @@ a:hover {
     color: var(--secondary);
     font-weight: bold;
 }
+.generalBtn {
+    background-color: var(--primary-bg-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 16rem;
+    border: 0.15rem solid var(--secondary);
+    color: var(--secondary);
+    cursor: url(/catPaw-green.png), auto;
+    text-align: center;
+}
+.generalBtn:hover {
+    border: 0.15rem solid var(--tertiary);
+    color: var(--tertiary);
+    cursor: url(/catPaw-yellow.png), auto;
+}
