@@ -38,10 +38,11 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
-.notCompatible--span {
-    font-size: 1.5rem;
+.notCompatible--txt {
+    font-size: 1.2rem;
     font-weight: bold;
     color: var(--secondary);
+    text-align: center;
 }
 .notCompatible--img {
     max-width: 15rem;
@@ -66,4 +67,15 @@ a:hover {
     border: 0.15rem solid var(--tertiary);
     color: var(--tertiary);
     cursor: url(/catPaw-yellow.png), auto;
+}
+.imgMini {
+    width: 400px;
+    height: 400px;
+}
+.rooms {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }

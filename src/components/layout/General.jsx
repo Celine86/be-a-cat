@@ -1,4 +1,5 @@
 import NotCompatible from '/NotCompatible.jpeg';
+import ResponsiveV2 from '/ResponsiveV2.jpeg';
 import { Outlet } from 'react-router-dom';
 import { useDeviceType } from '../../hooks/useDeviceType.js';
 import { Header } from './Header.jsx';
@@ -12,8 +13,10 @@ export function General() {
                 <main>
                     {deviceType === 'mobileOrTablet' ? (
                         <div className='notCompatible'>
-                            <p><span className='notCompatible--span'>Désolé le site n'est pas compatible avec les écrans de moins de 1024px</span></p>
+                            <p className='notCompatible--txt'>Ton écran fait moins de 1024x168px</p>
                             <img className='notCompatible--img' src={NotCompatible} />
+                            <p className='notCompatible--txt'>Une V2 responsive est prévue !</p>
+                            <img className='notCompatible--img' src={ResponsiveV2} />
                         </div>
                     ) : (
                     <Outlet />

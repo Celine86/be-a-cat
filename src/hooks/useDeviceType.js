@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 export function useDeviceType () {
   const getDeviceType = () => {
-    if (window.matchMedia('(max-width: 1024px)').matches) {
+    if (window.matchMedia('(max-width: 1023px) or (max-height: 767px)').matches) {
       return 'mobileOrTablet';
     } else {
       return 'desktop';
