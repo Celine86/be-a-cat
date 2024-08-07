@@ -6,11 +6,11 @@ header {
     height: 5vh;
 }
 .mainLogo {
-    width: 2rem;
+    width: 1.5rem;
     height: auto;
 }
 .website {
-    width: 2rem;
+    width: 1.5rem;
     height: auto;
 }
 .container__nav {
@@ -27,18 +27,8 @@ header {
     justify-content: center;
 }
 .mytitle {
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--secondary);
-}
-@media (max-width: 1250px) { 
-    .mainLogo {
-        width: 1.5rem;
-    }
-    .website {
-        width: 1.5rem;
-    }
-    .mytitle {
-        font-size: 1.5rem;
-    }
 }

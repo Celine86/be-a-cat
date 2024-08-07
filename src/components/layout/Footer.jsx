@@ -11,19 +11,19 @@ export function Footer() {
         <footer>
             <div className='socialIcons'>
                 <a target='_blank' href='https://www.linkedin.com/in/celineobringer/'>
-                    <img src={linkedinGreen}
+                    <img className='socialIconsImg' src={linkedinGreen}
                         onMouseOver={e => e.currentTarget.src = linkedinYellow}
                         onMouseOut={e => e.currentTarget.src = linkedinGreen}
                     />
                 </a>
                 <a target='_blank' href='https://codepen.io/Celine86'>
-                    <img src={codepenGreen}
+                    <img className='socialIconsImg' src={codepenGreen}
                         onMouseOver={e => e.currentTarget.src = codepenYellow}
                         onMouseOut={e => e.currentTarget.src = codepenGreen}
                     />
                 </a>
                 <a target='_blank' href='https://github.com/Celine86'>
-                    <img src={githubGreen}
+                    <img className='socialIconsImg' src={githubGreen}
                         onMouseOver={e => e.currentTarget.src = githubYellow}
                         onMouseOut={e => e.currentTarget.src = githubGreen}
                     />

@@ -11,3 +11,7 @@ footer {
     justify-content: space-around;
     margin: 0.15rem 0;
 }
+.socialIconsImg {
+    width: 22px;
+    height: auto;
+}
