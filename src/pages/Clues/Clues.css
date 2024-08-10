@@ -2,10 +2,5 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 55rem;
-}
-@media (max-width: 720px) {
-    .clueLinks {
-        width: 30rem;
-    }
+    width: 30rem;
 }
