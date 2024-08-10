@@ -12,6 +12,7 @@
 .presentation__patapouf {
     width: 50%;
     height: auto;
+    max-width: 512px;
 }
 .presentation__texte {
     width: 50%;

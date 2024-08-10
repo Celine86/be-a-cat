@@ -11,7 +11,7 @@ export function General() {
             <Header />
                 <main>
                     {deviceType === 'toosmall' ? (
-                        <div>
+                        <div className='notCompatible'>
                             <p className='notCompatible--txt'>Tourne ton téléphone pour voir ?</p>
                             <img className='notCompatible--img' src={ResponsiveV2} />
                         </div>
