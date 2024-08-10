@@ -51,33 +51,75 @@ export function DragNDrop({className}) {
     e.preventDefault();
   };
 
-  const handleClickToRemove = (id) => {
-    setListB(prev => prev.filter(item => item.id !== id));
+  const handleTouchStart = (e, item, sourceList) => {
+    //e.preventDefault();
+    e = e.touches[0];  
+    e.target.setAttribute("data-item", JSON.stringify(item));
+    e.target.setAttribute("data-sourceList", sourceList);
   };
-  
+
+  const handleTouchMove = (e) => {
+    const touch = e.touches[0];
+    const targetElement = document.elementFromPoint(touch.clientX, touch.clientY);
+    if (targetElement) {
+      targetElement.dispatchEvent(new Event("dragover", { bubbles: true }));
+    }
+  };
+
+  const handleTouchEnd = (e, targetList, targetItemId = null) => {
+    const touch = e.changedTouches[0];
+    const targetElement = document.elementFromPoint(touch.clientX, touch.clientY);
+    if (targetElement) {
+      const dropEvent = new Event("drop", { bubbles: true });
+      dropEvent.dataTransfer = {
+        getData: (type) => {
+          const target = document.querySelector(`[data-item][data-sourceList]`);
+          if (type === "item") return target.getAttribute("data-item");
+          if (type === "sourceList") return target.getAttribute("data-sourceList");
+          return null;
+        },
+      };
+      targetElement.dispatchEvent(dropEvent);
+    }
+  };
+
   return (
     <div className="container">
-        <div className={className} onDrop={e => handleDrop(e, 'listA')} onDragOver={handleDragOver}>
+        <div 
+          className={className} 
+          onDrop={e => handleDrop(e, 'listA')} 
+          onDragOver={handleDragOver}
+
+          onTouchMove={handleTouchMove}
+          onTouchEnd={(e) => handleTouchEnd(e, 'listA')}
+        >
             {listA.map(item => (
             <div
                 key={item.id}
                 className="item"
                 draggable
                 onDragStart={(e) => handleDragStart(e, item, 'listA')}
+                onTouchStart={(e) => handleTouchStart(e, item, 'listA')}
             >
                 {item.text}
             </div>
             ))}
         </div>
-        <div className="list" onDrop={e => handleDrop(e, 'listB')} onDragOver={handleDragOver}>
+        <div 
+          className="list" 
+          onDrop={e => handleDrop(e, 'listB')} 
+          onDragOver={handleDragOver}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={(e) => handleTouchEnd(e, 'listB')}
+        >
             {listB.map((item, index) => (
             <div
                 key={item.id}
                 className="item"
                 draggable
-                onClick={() => handleClickToRemove(item.id)}
                 onDragStart={(e) => handleDragStart(e, item, 'listB')}
                 onDrop={(e) => handleDrop(e, 'listB', item.id)}
+                onTouchStart={(e) => handleTouchStart(e, item, 'listB')}
             >
                 {item.text}
             </div>

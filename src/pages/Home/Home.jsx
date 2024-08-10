@@ -11,7 +11,7 @@ export function Home() {
         <>
         <div id='modal'></div>
         <HomeModal />
-        <div>
+        <div className='roomTitle'>
             <h2>Où chercher en premier ?</h2>
         </div>
         <div className='rooms'>

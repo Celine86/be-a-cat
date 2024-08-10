@@ -5,6 +5,20 @@ import { useDeviceType } from '../../hooks/useDeviceType.js';
 import { Header } from './Header.jsx';
 import { Footer } from './Footer.jsx';
 
+/*
+export function General() {
+    return (
+        <>
+            <Header />
+                <main>
+                    <Outlet />
+                </main>          
+            <Footer />
+        </>
+    )
+}
+*/
+
 export function General() {
     const deviceType = useDeviceType();
     return (

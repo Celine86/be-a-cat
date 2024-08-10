@@ -33,7 +33,7 @@ export function Clues() {
 
     return (
         <>
-        <div>
+        <div className='roomTitle'>
             <h2>Quels points veux-tu afficher ?</h2>
         </div>
         <div className='rooms'>
