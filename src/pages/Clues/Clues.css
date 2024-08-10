@@ -4,7 +4,7 @@
     justify-content: space-between;
     width: 55rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 720px) {
     .clueLinks {
         width: 30rem;
     }
