@@ -4,7 +4,7 @@ import baballe from '/Patapouf_Baballe.png';
 export function Bretagne () {
     return (
         <>
-            <h2>LA PRECIEUSE BABALLE !</h2>
+            <h2 className='magnifiqueBaballe'>LA PRECIEUSE BABALLE !</h2>
             <img className='precieuseBaballe' src={baballe} />
         </>
     )

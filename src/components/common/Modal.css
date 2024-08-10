@@ -2,28 +2,13 @@
     background-color: var(--primary-bg-color);
     color: var(--primary);
     border: 0.15rem solid var(--secondary);
-    /*border-radius: 5rem;*/
     cursor: url(/catPaw-green.png), auto;
-}
-.modal {
-    width: 98vw;
-    height: 87vh;
-    margin : 6vh auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
     z-index: 20;
-}
-.modalBtn {
-    cursor: url(/catPaw-green.png), auto;
-    background-color: var(--primary-bg-color);
-    color: var(--primary);
-    border: 1px solid var(--secondary);
-    border-radius: 5rem;
-    padding: 1rem;
-    width: 8rem;
-    align-self: center;
-}
-.modalBtn:hover {
-    cursor: url(/catPaw-yellow.png), auto;
-    border: 1px solid var(--tertiary);
 }
 .modalContainer {
     display: flex;
@@ -35,28 +20,4 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.modalContainer--title {
-    text-align: center;
-}
-.modalContainer__subContainer {
-    margin: 1rem auto;
-    width: 95%;
-}
-.presentation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 0.5rem;
-}
-.presentation__texte {
-    width: 25rem;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.presentation__texte--center {
-    text-align: justify;
-    line-height: 1.5rem;
-}
+

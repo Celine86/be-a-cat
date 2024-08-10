@@ -11,6 +11,7 @@ import { LivingRoom } from './pages/LivingRoom/LivingRoom.jsx';
 import { Clues } from './pages/Clues/Clues.jsx';
 import { Input } from './pages/Input/Input.jsx';
 import { Bretagne } from './pages/Bretagne/Bretagne.jsx';
+import { Introduction } from './pages/Introduction/Introduction.jsx';
 
 function App() {
   const router = createHashRouter([
@@ -20,6 +21,10 @@ function App() {
       children: [
         {
           path: '/',
+          element: <Introduction />,
+        },
+        {
+          path: '/home',
           element: <Home />,
         },
         {

@@ -19,7 +19,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 88vh;
+    min-height: 85vh;
     cursor: url(/catPaw-green.png), auto;
 }
 a {
@@ -71,9 +71,9 @@ a:hover {
 .imgMini {
     width: 400px;
     height: 400px;
+    padding-bottom: 2rem;
 }
 .rooms {
-    /*height: 60vh;*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -81,4 +81,9 @@ a:hover {
 }
 .roomTitle {
     padding-bottom: 2rem;
+}
+@media (max-width: 600px) {
+    .rooms {
+        flex-direction: column;
+    }
 }

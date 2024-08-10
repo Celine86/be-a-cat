@@ -1,29 +1,29 @@
 
 .room {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .roomAside {
-    border-right: 0.25rem solid var(--secondary);
+    border-bottom: 0.15rem solid var(--secondary);
 }
 .roomNav {
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding: 0rem 1rem 0rem 0rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0.5rem 0;
     margin: auto;
 }
 .roomNav--link {
-    padding: 0 0 0.10rem 0;
+    padding: 0 1rem 0 1rem;
 }
 .roomNav--link:hover {
-    padding: 0 0 0.10rem 0;
     cursor: url(/catPaw-green.png), auto;
 }
-.roomNav--indication {
+/*.roomNav--indication {
     padding: 0.5rem 0 0.5rem 0; 
     font-weight: bold;
-}
+}*/
 .roomMain {
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@
 }
 .roomIndications {
     height: 2vh;
-    padding: 0 0 0 0;
+    padding: 0.5rem 0 0 0;
     color: var(--primary);
     font-size: 1rem;
     font-weight: bold;
@@ -46,14 +46,13 @@
 }
 .roomPlayzone {
     width: 80vw;
-    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
 }
 .roomPlayzoneImgFrame {
-    padding: 2rem 0 0 0;
+    padding: 1rem 0 0 0;
 }
 .roomPlayzone img {
     display: block;
@@ -72,4 +71,10 @@ area:hover {
     color: var(--tertiary);
     font-weight: bold;
     font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .roomPlayzoneImgFrame {
+        padding: 6rem 0 0 0;
+    }
 }

@@ -2,19 +2,11 @@
     display: flex;
     justify-content: space-around;
     padding: 1rem;
-    width: 45rem;
-}
-.list {
-    width: 100%;
-    height: 30rem;
-    border: 0.25rem solid var(--secondary);
-    min-height: 2rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    width: 50%;
 }
 .item {
-    height: 2.18rem;
-    padding: 0.58rem;
+    height: 5.5%;
+    padding: 0.5rem;
     margin-bottom: 0rem;
     background-color: var(--secondary);
     border: 0.15rem solid var(--tertiary);
@@ -25,37 +17,49 @@
 }
 .indice3 {
     width: 100%;
-    height: 30rem;
+    height: 10rem;
     border: 0.25rem solid var(--secondary);
-    min-height: 2rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: 0.10rem;
+    padding: 0.10rem;
     background-image: url(/Indice3.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    background-size: auto;
 }
 .indice4 {
     width: 100%;
-    height: 30rem;
+    height: 10rem;
     border: 0.25rem solid var(--secondary);
-    min-height: 2rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: 0.10rem;
+    padding: 0.10rem;
     background-image: url(/Indice4.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    background-size: auto;
 }
 .indice5 {
     width: 100%;
-    height: 30rem;
+    height: 10rem;
     border: 0.25rem solid var(--secondary);
-    min-height: 2rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: 0.10rem;
+    padding: 0.10rem;
     background-image: url(/Indice5.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    background-size: auto;
+}
+.empty {
+    width: 100%;
+    height: 10rem;
+    border: 0.25rem solid var(--secondary);
+    margin: 0.10rem;
+    padding: 0.10rem;
+    background-image: url(/Empty.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
 }

@@ -11,7 +11,7 @@ export function Header() {
         <div id='modal'></div>
         <header>
             <div className='header__elmt'>
-                <NavLink to='/'>
+                <NavLink to='/home'>
                     <img className='website' src={catPawGreen}
                             onMouseOver={e => e.currentTarget.src = catPawYellow}
                             onMouseOut={e => e.currentTarget.src = catPawGreen}

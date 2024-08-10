@@ -21,7 +21,7 @@ export function ChangeDiv ({ targetNumber, secretMessage }) {
         <div
           style={{
             width: '20rem',
-            height: '10rem',
+            height: '2rem',
             backgroundColor: 'var(--primary-bg-color)',
             border: isCorrect ? '0.25rem solid var(--tertiary)' : '0.25rem solid var(--secondary)',
             color: 'var(--primary)',

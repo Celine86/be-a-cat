@@ -3,11 +3,11 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    height: 6vh;
-    width: 97vw;
+    height: 10vh;
+    width: 95vw;
 }
 .imgClue{
-    width: 25rem;
+    width: 50%;
     height: auto;
     padding-top: 1rem;
 }

@@ -1,4 +1,8 @@
+.magnifiqueBaballe {
+    padding-top: 1rem;
+}
 .precieuseBaballe {
-    width: 40rem;
+    /*width: 40rem;*/
+    width: 50%;
     height: auto;
 }

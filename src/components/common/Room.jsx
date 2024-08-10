@@ -29,12 +29,10 @@ export function Room({ zones, hoveredmsg, imageSrc, mapName, onZoneClick }) {
       <div className='room'>
         <div className='roomAside'>
           <div className='roomNav'>
-            <p className='roomNav--indication'>Des outils !</p>
             <NavLink className='roomNav--link' to={isInLivingRoom ? '/sleepingroom' : '/livingroom'}>
               {isInLivingRoom ? 'La chambre' : 'Le salon'}
             </NavLink>
             <NavLink className='roomNav--link' to='/clues'>Où cliquer ?</NavLink>
-            <p className='roomNav--indication'>Baballe ?</p>
             <NavLink className='roomNav--link' to='/input'>J'ai trouvé !</NavLink>
           </div>
         </div>
@@ -51,7 +49,7 @@ export function Room({ zones, hoveredmsg, imageSrc, mapName, onZoneClick }) {
           </div>
           <div className='roomPlayzone'>
             <div className='roomPlayzoneImgFrame'>
-              <img src={imageSrc} alt='Clickable' useMap={`#${mapName}`} />
+              <img className='responsiveImg' src={imageSrc} alt='Clickable' useMap={`#${mapName}`} />
               <map name={mapName}>
                 {zones.map((zone) => (
                   <area

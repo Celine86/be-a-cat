@@ -7,10 +7,7 @@ export function DragNDrop({className}) {
     { id: 2, text: " " },
     { id: 3, text: " " },
     { id: 4, text: " " },
-    { id: 5, text: " " },
-    { id: 6, text: " " },
-    { id: 7, text: " " },
-    { id: 8, text: " " }
+    { id: 5, text: " " }
   ]);
   const [listB, setListB] = useState([]);
 
@@ -106,7 +103,7 @@ export function DragNDrop({className}) {
             ))}
         </div>
         <div 
-          className="list" 
+          className="empty" 
           onDrop={e => handleDrop(e, 'listB')} 
           onDragOver={handleDragOver}
           onTouchMove={handleTouchMove}

@@ -37,24 +37,22 @@ export function Clues() {
             <h2>Quels points veux-tu afficher ?</h2>
         </div>
         <div className='rooms'>
-            <nav>
-                <Tooltip 
-                    id="sleepingroom"
-                    imageSrc={images.sleepingroom}
-                    alt='La chambre !' 
-                    tooltip='Ceux de la chambre !'
-                    imageClass='imgMini'
-                    onClick={() => handleClick('sleepingroom')}
-                />
-                <Tooltip 
-                    id="livingroom"
-                    imageSrc={images.livingroom}
-                    alt='Le salon !' 
-                    tooltip='Ceux du salon !'
-                    imageClass='imgMini' 
-                    onClick={() => handleClick('livingroom')}
-                />
-            </nav>
+            <Tooltip 
+                id="sleepingroom"
+                imageSrc={images.sleepingroom}
+                alt='La chambre !' 
+                tooltip='Ceux de la chambre !'
+                imageClass='imgMini'
+                onClick={() => handleClick('sleepingroom')}
+            />
+            <Tooltip 
+                id="livingroom"
+                imageSrc={images.livingroom}
+                alt='Le salon !' 
+                tooltip='Ceux du salon !'
+                imageClass='imgMini' 
+                onClick={() => handleClick('livingroom')}
+            />
         </div>
         <div className='clueLinks'>
             <NavLink className='generalBtn' to='/sleepingroom'>Je retourne dans la chambre !</NavLink>
