@@ -38,7 +38,7 @@ export function Room({ zones, hoveredmsg, imageSrc, mapName, onZoneClick }) {
         </div>
         <div className='roomMain'>
           <div className='roomIndications'>
-              <p>Passe ta souris partout pour trouver 4 indices afin de reconstituer le mot mystère composé de 8 lettres !</p>
+              <p>Appuie partout pour trouver 4 indices afin de reconstituer le mot mystère composé de 8 lettres !</p>
           </div>
           <div className='roomHeader'>
             <div className='onMouseEnter'>

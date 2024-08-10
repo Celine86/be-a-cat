@@ -15,7 +15,7 @@ export function Introduction() {
                         A force de toucher à tout il a perdu sa baballe rouge et il est très malheureux.<br/>
                         Aide Patapouf a retrouver sa magnifique baballe !<br/>
                         Des indices se cachent dans le salon et la chambre.<br />
-                        Passe ta souris partout et note les indices qui te permettront de trouver les <span className='highlight'>8</span> lettres du mot mystère !<br />
+                        Appuie partout et note les indices qui te permettront de trouver les <span className='highlight'>8</span> lettres du mot mystère !<br />
                         Trouveras-tu la baballe ?
                     </p>
                 </div>
