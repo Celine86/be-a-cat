@@ -73,7 +73,7 @@ area:hover {
     font-size: 1rem;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 820px) {
     .roomPlayzoneImgFrame {
         padding: 6rem 0 0 0;
     }
