@@ -11,9 +11,8 @@ export function ZoneModal({ isOpen, onClose, children }) {
             <div>
                 {createPortal(
                     <Modal>
-
-                        <div className='closeBtn'>
-                            <img src={closebtnGreen}
+                        <div className='closeDiv'>
+                            <img className='closeDivBtn' src={closebtnGreen}
                                 onMouseOver={e => e.currentTarget.src = closebtnYellow}
                                 onMouseOut={e => e.currentTarget.src = closebtnGreen}
                                 onClick={onClose}

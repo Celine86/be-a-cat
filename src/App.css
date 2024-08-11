@@ -32,23 +32,6 @@ a:hover {
     text-decoration: none;
     font-weight: bold;
 }
-.notCompatible {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.notCompatible--txt {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--secondary);
-    text-align: center;
-}
-.notCompatible--img {
-    max-width: 15rem;
-    height: auto;
-    margin: 1rem auto;
-}
 .highlight {
     color: var(--secondary);
     font-weight: bold;
@@ -81,6 +64,10 @@ a:hover {
 }
 .roomTitle {
     padding-bottom: 2rem;
+    text-align: center;
+}
+.roomTitle h2 {
+    padding-bottom: 0.5rem;
 }
 @media (max-width: 820px) {
     .rooms {

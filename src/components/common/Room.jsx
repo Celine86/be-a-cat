@@ -29,11 +29,11 @@ export function Room({ zones, hoveredmsg, imageSrc, mapName, onZoneClick }) {
       <div className='room'>
         <div className='roomAside'>
           <div className='roomNav'>
-            <NavLink className='roomNav--link' to={isInLivingRoom ? '/sleepingroom' : '/livingroom'}>
+            <NavLink className='roomNavLink' to={isInLivingRoom ? '/sleepingroom' : '/livingroom'}>
               {isInLivingRoom ? 'La chambre' : 'Le salon'}
             </NavLink>
-            <NavLink className='roomNav--link' to='/clues'>Où cliquer ?</NavLink>
-            <NavLink className='roomNav--link' to='/input'>J'ai trouvé !</NavLink>
+            <NavLink className='roomNavLink' to='/clues'>Où cliquer ?</NavLink>
+            <NavLink className='roomNavLink' to='/input'>J'ai trouvé !</NavLink>
           </div>
         </div>
         <div className='roomMain'>
@@ -43,7 +43,7 @@ export function Room({ zones, hoveredmsg, imageSrc, mapName, onZoneClick }) {
           <div className='roomHeader'>
             <div className='onMouseEnter'>
               {zones.map((zone) => (
-                hoveredZones[zone.id] && <p className='onMouseEnter__p' key={zone.id}>{hoveredmsg[zone.id]}</p>
+                hoveredZones[zone.id] && <p className='onMouseEnterP' key={zone.id}>{hoveredmsg[zone.id]}</p>
               ))}
             </div>
           </div>

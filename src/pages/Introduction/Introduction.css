@@ -1,20 +1,20 @@
 
-.presentation__container {
+.presentationContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 0.5rem;
 }
-.presentation--title {
+.presentationTitle {
     padding: 1rem 0;
     text-align: center;
 }
-.presentation__patapouf {
+.presentationPatapouf {
     width: 50%;
     height: auto;
     max-width: 512px;
 }
-.presentation__texte {
+.presentationTexte {
     width: 50%;
     height: auto;
     display: flex;
@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: center;
 }
-.presentation__texte--center {
+.presentationTexteCenter {
     text-align: justify;
     line-height: 1.5rem;
 }

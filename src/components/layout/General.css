@@ -1,0 +1,17 @@
+.notCompatible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notCompatibleTxt {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondary);
+    text-align: center;
+}
+.notCompatibleImg {
+    max-width: 15rem;
+    height: auto;
+    margin: 1rem auto;
+}

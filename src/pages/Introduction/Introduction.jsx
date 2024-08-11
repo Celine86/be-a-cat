@@ -6,11 +6,11 @@ export function Introduction() {
     return (
         <>
         <div>
-            <h2 className='presentation--title'>Patapouf est malheureux...</h2>
-            <div className='presentation__container'>
-                <img className='presentation__patapouf' src={patapouf} />
-                <div className='presentation__texte'>
-                    <p className='presentation__texte--center'> 
+            <h2 className='presentationTitle'>Patapouf est malheureux...</h2>
+            <div className='presentationContainer'>
+                <img className='presentationPatapouf' src={patapouf} />
+                <div className='presentationTexte'>
+                    <p className='presentationTexteCenter'> 
                         Patapouf est un chat curieux et maladroit, un peu comme tous les chats.<br/> 
                         A force de toucher à tout il a perdu sa baballe rouge et il est très malheureux.<br/>
                         Aide Patapouf a retrouver sa magnifique baballe !<br/>

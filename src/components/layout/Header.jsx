@@ -10,7 +10,7 @@ export function Header() {
         <>
         <div id='modal'></div>
         <header>
-            <div className='header__elmt'>
+            <div className='headerElmt'>
                 <NavLink to='/home'>
                     <img className='website' src={catPawGreen}
                             onMouseOver={e => e.currentTarget.src = catPawYellow}
@@ -18,10 +18,10 @@ export function Header() {
                     />
                 </NavLink>
             </div>
-            <div className='header__elmt container__mytitle'>
+            <div className='headerElmt containerMytitle'>
                 <h1 className='mytitle'>Be A Cat</h1>
             </div>
-            <div className='header__elmt container__nav'>
+            <div className='headerElmt containerNav'>
                 <a target='_blank' href='https://lilineslab.fr'>
                     <img className='mainLogo' src={catGreen}
                         onMouseOver={e => e.currentTarget.src = catYellow}

@@ -14,15 +14,15 @@ export function Clues() {
         livingroom: LivingRoom,
     });
 
-    const handleClick = (tooltipId) => {
-        if (tooltipId === 'sleepingroom') {
+    const handleClick = (roomId) => {
+        if (roomId === 'sleepingroom') {
             setImages((prevImages) => ({
                 ...prevImages,
                 sleepingroom: prevImages.sleepingroom === SleepingRoom ? SleepingRoomClues : SleepingRoom
                           
             }));
         }
-        else if (tooltipId === 'livingroom') {
+        else if (roomId === 'livingroom') {
             setImages((prevImages) => ({
                 ...prevImages,
                 livingroom: prevImages.livingroom === LivingRoom ? LivingRoomClues : LivingRoom
@@ -37,22 +37,40 @@ export function Clues() {
             <h2>Quels points veux-tu afficher ?</h2>
         </div>
         <div className='rooms'>
-            <Tooltip 
+            <div>
+            <img 
+                id="sleepingroom"
+                src={images.sleepingroom}
+                alt='La chambre !' 
+                className='imgMini'
+                onClick={() => handleClick('sleepingroom')}
+            />
+            {/* <Tooltip 
                 id="sleepingroom"
                 imageSrc={images.sleepingroom}
                 alt='La chambre !' 
-                tooltip='Ceux de la chambre !'
+                //tooltip='Ceux de la chambre !'
                 imageClass='imgMini'
                 onClick={() => handleClick('sleepingroom')}
+            /> */}
+            </div>
+            <div>
+            <img 
+                id="livingroom"
+                src={images.livingroom}
+                alt='Le salon !' 
+                className='imgMini'
+                onClick={() => handleClick('livingroom')}
             />
-            <Tooltip 
+            {/* <Tooltip 
                 id="livingroom"
                 imageSrc={images.livingroom}
                 alt='Le salon !' 
-                tooltip='Ceux du salon !'
+                //tooltip='Ceux du salon !'
                 imageClass='imgMini' 
                 onClick={() => handleClick('livingroom')}
-            />
+            /> */}
+            </div>
         </div>
         <div className='clueLinks'>
             <NavLink className='generalBtn' to='/sleepingroom'>Je retourne dans la chambre !</NavLink>

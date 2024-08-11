@@ -5,7 +5,7 @@ import { Guess } from '../../components/common/Guess.jsx';
 
 
 export function Input() {
-    const [countdown, setCountdown] = useState(10);
+    const [countdown, setCountdown] = useState(15);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -14,7 +14,7 @@ export function Input() {
         } else {
           const timer = setTimeout(() => {
             setCountdown(countdown - 1);
-          }, 1000);
+          }, 1500);
           return () => clearTimeout(timer);
         }
       }, [countdown, navigate]);
