@@ -82,7 +82,7 @@ a:hover {
 .roomTitle {
     padding-bottom: 2rem;
 }
-@media (max-width: 720px) {
+@media (max-width: 740px) {
     .rooms {
         flex-direction: column;
     }
