@@ -5,7 +5,7 @@ input[type='text'] {
     background-color: var(--primary-bg-color);
     color: var(--primary);
     padding: 0.25rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 input[type='text']:focus {
     border: 0.15rem solid var(--tertiary);

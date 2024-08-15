@@ -47,6 +47,10 @@ function App() {
         path: '/bretagne',
         element: <Bretagne />,
         },
+        {
+          path: '404',
+          element: <Page404 />,
+        }
       ],
     },
   ])

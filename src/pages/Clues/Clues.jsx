@@ -5,7 +5,7 @@ import SleepingRoom from '/Patapouf_SleepingRoom.jpeg';
 import LivingRoom from '/Patapouf_LivingRoom.jpeg';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Tooltip } from '../../components/common/Tooltip.jsx';
+//import { Tooltip } from '../../components/common/Tooltip.jsx';
 
 export function Clues() {
 
@@ -18,16 +18,16 @@ export function Clues() {
         if (roomId === 'sleepingroom') {
             setImages((prevImages) => ({
                 ...prevImages,
-                sleepingroom: prevImages.sleepingroom === SleepingRoom ? SleepingRoomClues : SleepingRoom
-                          
+                sleepingroom: prevImages.sleepingroom === SleepingRoom ? SleepingRoomClues : SleepingRoom           
             }));
+            localStorage.setItem('sleepingRoom-pts', 50);
         }
         else if (roomId === 'livingroom') {
             setImages((prevImages) => ({
                 ...prevImages,
                 livingroom: prevImages.livingroom === LivingRoom ? LivingRoomClues : LivingRoom
-                          
             }));
+            localStorage.setItem('livingRoom-pts', 50);
         }
     };
 
@@ -35,6 +35,7 @@ export function Clues() {
         <>
         <div className='roomTitle'>
             <h2>Quels points veux-tu afficher ?</h2>
+            <h3>Attention chaque chambre coûte <span className='highlight'>50</span>points !</h3>
         </div>
         <div className='rooms'>
             <div>
