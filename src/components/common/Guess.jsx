@@ -7,7 +7,7 @@ export function Guess () {
     const navigate = useNavigate();
 
     const handleChange = (event) => {
-        setInputValue(event.target.value.toLowerCase());
+        setInputValue(event.target.value.toLowerCase().trim());
     };
 
     const handleSubmit = (event) => {

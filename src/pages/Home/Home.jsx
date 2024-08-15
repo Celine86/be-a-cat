@@ -15,7 +15,7 @@ export function Home() {
         </div>
         <div className='rooms'>
             <div>
-                <p className='roomDescription'>La chambre de Lilie, la maman humaine de Patapouf !</p>
+                {/* <p className='roomDescription'>La chambre de Lilie, la maman humaine de Patapouf !</p> */}
                 <NavLink className='navlink' to='/sleepingroom'>
                     <img className='imgMini' src={SleepingRoom} alt='La chambre !' />
                     {/* <Tooltip 
@@ -27,7 +27,7 @@ export function Home() {
                 </NavLink>
             </div>
             <div>
-                <p className='roomDescription'>Le salon, le territoire de Teigne, l'autre chat de la maison !</p>
+                {/* <p className='roomDescription'>Le salon, le territoire de Teigne, l'autre chat de la maison !</p> */}
                 <NavLink className='navlink' to='/livingroom'>
                     <img className='imgMini' src={LivingRoom} alt='Le salon !' />
                     { /* <Tooltip 
