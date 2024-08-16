@@ -10,10 +10,10 @@
     border: 0.15rem solid var(--secondary);
     border-radius: 5rem;
     color: var(--secondary);
-    cursor: url(/imgs/catPaw-green.png), auto;
+    cursor: url(/catPaw-green.png), auto;
 }
 .btn404:hover {
     border: 0.15rem solid var(--tertiary);
     color: var(--tertiary);
-    cursor: url(/imgs/catPaw-yellow.png), auto;
+    cursor: url(/catPaw-yellow.png), auto;
 }

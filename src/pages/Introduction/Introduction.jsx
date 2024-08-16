@@ -1,5 +1,5 @@
 import './Introduction.css';
-import patapouf from '/imgs/Patapouf_Introduction.jpeg';
+import patapouf from '/Patapouf_Introduction.jpeg';
 import { NavLink } from 'react-router-dom';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { useTimestamp } from '../../hooks/useTimestamp';

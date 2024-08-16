@@ -1,8 +1,8 @@
 import './Header.css';
-import catGreen from '/imgs/cat-green.png';
-import catYellow from '/imgs/cat-yellow.png';
-import catPawGreen from '/imgs/bigCatPaw-green.png';
-import catPawYellow from '/imgs/bigCatPaw-yellow.png';
+import catGreen from '/cat-green.png';
+import catYellow from '/cat-yellow.png';
+import catPawGreen from '/bigCatPaw-green.png';
+import catPawYellow from '/bigCatPaw-yellow.png';
 import { NavLink } from 'react-router-dom';
 
 export function Header() {

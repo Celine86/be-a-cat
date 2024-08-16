@@ -2,7 +2,7 @@
     background-color: var(--primary-bg-color);
     color: var(--primary);
     border: 0.15rem solid var(--secondary);
-    cursor: url(/imgs/catPaw-green.png), auto;
+    cursor: url(/catPaw-green.png), auto;
     position: fixed;
     top: 50%;
     left: 50%;

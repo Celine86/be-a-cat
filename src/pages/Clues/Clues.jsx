@@ -1,8 +1,8 @@
 import './Clues.css';
-import SleepingRoomClues from '/imgs/Patapouf_SleepingRoom_ClickPoints.jpeg';
-import LivingRoomClues from '/imgs/Patapouf_LivingRoom_ClickPoints.jpeg';
-import SleepingRoom from '/imgs/Patapouf_SleepingRoom.jpeg';
-import LivingRoom from '/imgs/Patapouf_LivingRoom.jpeg';
+import SleepingRoomClues from '/Patapouf_SleepingRoom_ClickPoints.jpeg';
+import LivingRoomClues from '/Patapouf_LivingRoom_ClickPoints.jpeg';
+import SleepingRoom from '/Patapouf_SleepingRoom.jpeg';
+import LivingRoom from '/Patapouf_LivingRoom.jpeg';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 

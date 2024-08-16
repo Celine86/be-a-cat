@@ -1,5 +1,5 @@
 import { ZoneModal } from '../common/ZoneModal.jsx'
-import Indice1 from '/imgs/Indice1.jpeg';
+import Indice1 from '/Indice1.jpeg';
 
 export function Zone4LivingRoom({ isOpen, onClose }) {
     return (

@@ -20,7 +20,7 @@ main {
     justify-content: center;
     flex-direction: column;
     min-height: 85vh;
-    cursor: url(/imgs/catPaw-green.png), auto;
+    cursor: url(/catPaw-green.png), auto;
 }
 a {
     color: var(--secondary);
@@ -43,13 +43,13 @@ a:hover {
     width: 16rem;
     border: 0.15rem solid var(--secondary);
     color: var(--secondary);
-    cursor: url(/imgs/catPaw-green.png), auto;
+    cursor: url(/catPaw-green.png), auto;
     text-align: center;
 }
 .generalBtn:hover {
     border: 0.15rem solid var(--tertiary);
     color: var(--tertiary);
-    cursor: url(/imgs/catPaw-yellow.png), auto;
+    cursor: url(/catPaw-yellow.png), auto;
 }
 .imgMini {
     width: 400px;

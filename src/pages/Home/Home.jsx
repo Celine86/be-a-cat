@@ -1,6 +1,6 @@
 import './Home.css';
-import SleepingRoom from '/imgs/Patapouf_SleepingRoom.jpeg';
-import LivingRoom from '/imgs/Patapouf_LivingRoom.jpeg';
+import SleepingRoom from '/Patapouf_SleepingRoom.jpeg';
+import LivingRoom from '/Patapouf_LivingRoom.jpeg';
 import { NavLink } from 'react-router-dom';
 
 export function Home() {

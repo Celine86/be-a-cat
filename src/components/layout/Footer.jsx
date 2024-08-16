@@ -1,10 +1,10 @@
 import './Footer.css';
-import linkedinGreen from '/imgs/linkedin-green.png';
-import linkedinYellow from '/imgs/linkedin-yellow.png';
-import codepenGreen from '/imgs/codepen-green.png';
-import codepenYellow from '/imgs/codepen-yellow.png';
-import githubGreen from '/imgs/github-green.png';
-import githubYellow from '/imgs/github-yellow.png';
+import linkedinGreen from '/linkedin-green.png';
+import linkedinYellow from '/linkedin-yellow.png';
+import codepenGreen from '/codepen-green.png';
+import codepenYellow from '/codepen-yellow.png';
+import githubGreen from '/github-green.png';
+import githubYellow from '/github-yellow.png';
 
 export function Footer() {
     return (

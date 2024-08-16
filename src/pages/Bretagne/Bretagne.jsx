@@ -1,5 +1,5 @@
 import './Bretagne.css';
-import baballe from '/imgs/Patapouf_Baballe.png';
+import baballe from '/Patapouf_Baballe.png';
 import { useTimestamp } from '../../hooks/useTimestamp';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';

@@ -18,7 +18,7 @@
     padding: 0 1rem 0 1rem;
 }
 .roomNavLink:hover {
-    cursor: url(/imgs/catPaw-green.png), auto;
+    cursor: url(/catPaw-green.png), auto;
 }
 .roomMain {
     display: flex;
@@ -59,7 +59,7 @@
     text-align: center;
 }
 area:hover {
-    cursor: url(/imgs/catPaw-yellow.png), auto;
+    cursor: url(/catPaw-yellow.png), auto;
 }
 .onMouseEnter {
     height: 2vh;
