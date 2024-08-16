@@ -21,13 +21,6 @@ export function SleepingRoom() {
     Zone4: 'un QRCode ! Que peut-il bien cacher ?',
   };
 
-  /*const clickedmsg = {
-    Zone1: 'Quel est le mot mystère ?',
-    Zone2: 'Patapouf va-t-il être heureux bientôt ?',
-    Zone3: 'Où est la baballe ?',
-    Zone4: 'Peut-être un indice sur le super site indiqué par le QRCode ?',
-  };*/
-
   const [isZone1Open, toggleZone1] = useSwap(false);
   const [isZone2Open, toggleZone2] = useSwap(false);
   const [isZone3Open, toggleZone3] = useSwap(false);
@@ -57,7 +50,6 @@ export function SleepingRoom() {
       <Room 
         zones={zones} 
         hoveredmsg={hoveredmsg}
-        //clickedmsg={clickedmsg} 
         imageSrc={sleepingroom} 
         mapName='sleepingroom-map'
         onZoneClick={handleZoneClick}

@@ -5,7 +5,6 @@ import SleepingRoom from '/Patapouf_SleepingRoom.jpeg';
 import LivingRoom from '/Patapouf_LivingRoom.jpeg';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-//import { Tooltip } from '../../components/common/Tooltip.jsx';
 
 export function Clues() {
 
@@ -46,14 +45,6 @@ export function Clues() {
                 className='imgMini'
                 onClick={() => handleClick('sleepingroom')}
             />
-            {/* <Tooltip 
-                id="sleepingroom"
-                imageSrc={images.sleepingroom}
-                alt='La chambre !' 
-                //tooltip='Ceux de la chambre !'
-                imageClass='imgMini'
-                onClick={() => handleClick('sleepingroom')}
-            /> */}
             </div>
             <div>
             <img 
@@ -63,14 +54,6 @@ export function Clues() {
                 className='imgMini'
                 onClick={() => handleClick('livingroom')}
             />
-            {/* <Tooltip 
-                id="livingroom"
-                imageSrc={images.livingroom}
-                alt='Le salon !' 
-                //tooltip='Ceux du salon !'
-                imageClass='imgMini' 
-                onClick={() => handleClick('livingroom')}
-            /> */}
             </div>
         </div>
         <div className='clueLinks'>

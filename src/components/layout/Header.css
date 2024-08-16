@@ -3,7 +3,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 0.15rem solid var(--tertiary);
-    /*height: 5vh;*/
 }
 .mainLogo {
     width: 1.5rem;

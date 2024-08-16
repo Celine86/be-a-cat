@@ -49,7 +49,6 @@ export function DragNDrop({className}) {
   };
 
   const handleTouchStart = (e, item, sourceList) => {
-    //e.preventDefault();
     e = e.touches[0];  
     e.target.setAttribute("data-item", JSON.stringify(item));
     e.target.setAttribute("data-sourceList", sourceList);
