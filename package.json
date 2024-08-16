@@ -26,7 +26,8 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "gh-pages": "^6.1.1",
-    "vite": "^5.3.1"
+    "vite": "^5.3.1",
+    "vite-plugin-pwa": "^0.20.1"
   },
   "overrides": {
     "rimraf": "^4.0.0"
