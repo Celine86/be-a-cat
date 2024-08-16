@@ -10,10 +10,10 @@
     margin-bottom: 0rem;
     background-color: var(--secondary);
     border: 0.15rem solid var(--tertiary);
-    cursor: url(/catPaw-yellow.png), auto;
+    cursor: url(/imgs/catPaw-yellow.png), auto;
 }
 .item:active {
-    cursor: url(/catPaw-yellow.png), auto;
+    cursor: url(/imgs/catPaw-yellow.png), auto;
 }
 .indice3 {
     width: 100%;
@@ -21,7 +21,7 @@
     border: 0.25rem solid var(--secondary);
     margin: 0.10rem;
     padding: 0.10rem;
-    background-image: url(/Indice3.png);
+    background-image: url(/imgs/Indice3.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -33,7 +33,7 @@
     border: 0.25rem solid var(--secondary);
     margin: 0.10rem;
     padding: 0.10rem;
-    background-image: url(/Indice4.png);
+    background-image: url(/imgs/Indice4.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -45,7 +45,7 @@
     border: 0.25rem solid var(--secondary);
     margin: 0.10rem;
     padding: 0.10rem;
-    background-image: url(/Indice5.png);
+    background-image: url(/imgs/Indice5.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -57,7 +57,7 @@
     border: 0.25rem solid var(--secondary);
     margin: 0.10rem;
     padding: 0.10rem;
-    background-image: url(/Empty.png);
+    background-image: url(/imgs/Empty.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;

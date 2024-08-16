@@ -1,4 +1,4 @@
-import sleepingroom from '/Patapouf_SleepingRoom.jpeg';
+import sleepingroom from '/imgs/Patapouf_SleepingRoom.jpeg';
 import { useSwap } from '../../hooks/useSwap.js';
 import { Room } from '../../components/common/Room.jsx';
 import { Zone1SleepingRoom } from '../../components/parts/Zone1SleepingRoomModal.jsx';

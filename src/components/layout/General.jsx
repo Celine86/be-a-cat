@@ -1,4 +1,4 @@
-import ResponsiveV2 from '/ResponsiveV2.jpeg';
+import ResponsiveV2 from '/imgs/ResponsiveV2.jpeg';
 import './General.css';
 import { Outlet } from 'react-router-dom';
 import { useDeviceType } from '../../hooks/useDeviceType.js';

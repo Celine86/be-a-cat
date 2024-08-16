@@ -1,5 +1,5 @@
 import { ZoneModal } from '../common/ZoneModal.jsx';
-import Indice2 from '/Indice2.jpeg';
+import Indice2 from '/imgs/Indice2.jpeg';
 
 export function Zone1SleepingRoom({ isOpen, onClose }) {
     return (
