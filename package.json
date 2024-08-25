@@ -1,9 +1,9 @@
 {
-  "name": "playwithreact",
+  "name": "be-a-cat",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://celine86.github.io/playwithreact",
+  "homepage": "https://celine86.github.io/be-a-cat",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
