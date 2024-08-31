@@ -33,8 +33,8 @@ export function Clues() {
     return (
         <>
         <div className='roomTitle'>
-            <h2>Quels points veux-tu afficher ?</h2>
-            <h3>Attention chaque chambre coûte <span className='highlight'>50</span>points !</h3>
+            <h1>Quels points veux-tu afficher ?</h1>
+            <h2>Attention chaque chambre coûte <span className='highlight'>50</span>points !</h2>
         </div>
         <div className='rooms'>
             <div>

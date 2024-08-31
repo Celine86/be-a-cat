@@ -9,8 +9,8 @@ export function Home() {
         <>
         <div id='modal'></div>
         <div className='roomTitle'>
-            <h2>Où chercher en premier ?</h2>
-            <h3>La chambre ? Le salon ?</h3>
+            <h1>Où chercher en premier ?</h1>
+            <h2>La chambre ? Le salon ?</h2>
         </div>
         <div className='rooms'>
             <div>

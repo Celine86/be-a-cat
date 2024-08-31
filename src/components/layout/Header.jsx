@@ -19,7 +19,7 @@ export function Header() {
                 </NavLink>
             </div>
             <div className='headerElmt containerMytitle'>
-                <h1 className='mytitle'>Be A Cat</h1>
+                <p className='mytitle'>Be A Cat</p>
             </div>
             <div className='headerElmt containerNav'>
                 <a target='_blank' href='https://lilineslab.fr'>

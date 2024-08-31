@@ -32,9 +32,9 @@ export function Bretagne () {
 
     return (
         <>
-            <h2 className='magnifiqueBaballe'>LA PRECIEUSE BABALLE !</h2>
+            <h1 className='magnifiqueBaballe'>LA PRECIEUSE BABALLE !</h1>
             <img className='precieuseBaballe' src={baballe} />
-            <h3>Tu as <span className='highlight'>{totalPoints}</span> points !</h3>
+            <h2>Tu as <span className='highlight'>{totalPoints}</span> points !</h2>
         </>
     )
 }
