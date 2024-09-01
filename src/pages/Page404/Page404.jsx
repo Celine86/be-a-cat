@@ -16,7 +16,7 @@ export function Page404() {
         <>
             <main>
                 <img className='img404' src={Img404} />
-                <NavLink to='/home'><button className='btn404'>Retour au jeu</button></NavLink>
+                <button className='btn404'><NavLink to='/home'>Retour au jeu</NavLink></button>
             </main>
         </>
     )
