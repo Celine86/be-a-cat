@@ -1,8 +1,8 @@
 import './ZoneModal.css';
 import closebtnGreen from '/close-green.png';
 import closebtnYellow from '/close-yellow.png';
-import { Modal } from './Modal.jsx';
-import { createPortal } from 'react-dom';
+import {Modal} from '../Modal/Modal';
+import {createPortal} from 'react-dom';
 
 export function ZoneModal({ isOpen, onClose, children }) {
     return (

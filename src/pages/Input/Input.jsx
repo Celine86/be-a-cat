@@ -1,6 +1,6 @@
 import './Input.css';
-import { Guess } from '../../components/common/Guess.jsx';
-import { ShowClue } from '../../components/common/ShowClue.jsx';
+import {Guess} from '../../components/common/Guess/Guess.jsx';
+import {ShowClue} from '../../components/common/ShowClue/ShowClue.jsx';
 
 export function Input() {
     return (

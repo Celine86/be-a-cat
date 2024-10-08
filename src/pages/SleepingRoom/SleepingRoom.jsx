@@ -1,10 +1,10 @@
 import sleepingroom from '/Patapouf_SleepingRoom.jpeg';
-import { useSwap } from '../../hooks/useSwap.js';
-import { Room } from '../../components/common/Room.jsx';
-import { Zone1SleepingRoom } from '../../components/parts/Zone1SleepingRoomModal.jsx';
-import { Zone2SleepingRoom } from '../../components/parts/Zone2SleepingRoomModal.jsx';
-import { Zone3SleepingRoom } from '../../components/parts/Zone3SleepingRoomModal.jsx';
-import { Zone4SleepingRoom } from '../../components/parts/Zone4SleepingRoomModal.jsx';
+import {useSwap} from '../../hooks/useSwap.js';
+import {Room} from '../../components/common/Room/Room.jsx';
+import {Zone1SleepingRoom} from '../../components/parts/Zone1SleepingRoomModal/Zone1SleepingRoomModal.jsx';
+import {Zone2SleepingRoom} from '../../components/parts/Zone2SleepingRoomModal/Zone2SleepingRoomModal.jsx';
+import {Zone3SleepingRoom} from '../../components/parts/Zone3SleepingRoomModal/Zone3SleepingRoomModal.jsx';
+import {Zone4SleepingRoom} from '../../components/parts/Zone4SleepingRoomModal/Zone4SleepingRoomModal.jsx';
 
 export function SleepingRoom() {
   const zones = [

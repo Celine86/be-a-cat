@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import useMouseEnter from '../../hooks/useMouseEnter.js';
+import useMouseEnter from '../../../hooks/useMouseEnter.js';
 
 export function Tooltip ({ id, imageSrc, alt, tooltip, imageClass, onClick }) {
   const ref = useRef(null);

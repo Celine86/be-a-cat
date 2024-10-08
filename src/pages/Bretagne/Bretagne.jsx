@@ -1,10 +1,11 @@
 import './Bretagne.css';
 import baballe from '/Patapouf_Baballe.png';
-import { useTimestamp } from '../../hooks/useTimestamp';
-import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import {useTimestamp} from '../../hooks/useTimestamp';
+import {useLocation} from 'react-router-dom';
+import {useEffect} from 'react';
 
 export function Bretagne () {
+    
     const startTimestamp = localStorage.getItem('start-timestamp');
     const [stopTimestamp, saveStopTimestamp] = useTimestamp('stop-timestamp');
     const location = useLocation();

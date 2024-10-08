@@ -1,5 +1,5 @@
-import { ZoneModal } from '../common/ZoneModal.jsx'
-import { DragNDrop } from '../common/DragNDrop.jsx';
+import {ZoneModal} from '../../common/ZoneModal/ZoneModal.jsx'
+import {DragNDrop} from '../../common/DragNDrop/DragNDrop.jsx';
 
 export function Zone3SleepingRoom({ isOpen, onClose }) {
     return (

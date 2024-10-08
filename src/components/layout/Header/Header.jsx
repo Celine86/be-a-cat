@@ -3,7 +3,7 @@ import catGreen from '/cat-green.png';
 import catYellow from '/cat-yellow.png';
 import catPawGreen from '/bigCatPaw-green.png';
 import catPawYellow from '/bigCatPaw-yellow.png';
-import { NavLink } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 export function Header() {
     return (

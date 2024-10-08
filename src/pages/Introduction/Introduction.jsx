@@ -1,8 +1,8 @@
 import './Introduction.css';
 import patapouf from '/Patapouf_Introduction.jpeg';
-import { NavLink } from 'react-router-dom';
-import { useLocalStorage } from '../../hooks/useLocalStorage';
-import { useTimestamp } from '../../hooks/useTimestamp';
+import {NavLink} from 'react-router-dom';
+import {useLocalStorage} from '../../hooks/useLocalStorage';
+import {useTimestamp} from '../../hooks/useTimestamp';
 
 export function Introduction() {
 

@@ -1,4 +1,4 @@
-import { ZoneModal } from '../common/ZoneModal.jsx'
+import {ZoneModal} from '../../common/ZoneModal/ZoneModal.jsx'
 import Indice1 from '/Indice1.jpeg';
 
 export function Zone4LivingRoom({ isOpen, onClose }) {

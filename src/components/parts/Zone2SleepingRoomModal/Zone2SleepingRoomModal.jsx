@@ -1,5 +1,5 @@
-import { ZoneModal } from '../common/ZoneModal.jsx'
-import { ChangeDiv } from '../common/ChangeDiv.jsx';
+import {ZoneModal} from '../../common/ZoneModal/ZoneModal.jsx'
+import {ChangeDiv} from '../../common/ChangeDiv/ChangeDiv.jsx';
 
 export function Zone2SleepingRoom({ isOpen, onClose }) {
     return (

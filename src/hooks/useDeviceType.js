@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export function useDeviceType () {
+  
   const getDeviceType = () => {
     if (window.matchMedia('(max-width: 530px)').matches) {
       return 'toosmall';

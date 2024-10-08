@@ -1,10 +1,10 @@
 import livingroom from '/Patapouf_LivingRoom.jpeg';
-import { useSwap } from '../../hooks/useSwap.js';
-import { Room } from '../../components/common/Room.jsx';
-import { Zone1LivingRoom } from '../../components/parts/Zone1LivingRoomModal.jsx';
-import { Zone2LivingRoom } from '../../components/parts/Zone2LivingRoomModal.jsx';
-import { Zone3LivingRoom } from '../../components/parts/Zone3LivingRoomModal.jsx';
-import { Zone4LivingRoom } from '../../components/parts/Zone4LivingRoomModal.jsx';
+import {useSwap} from '../../hooks/useSwap.js';
+import {Room} from '../../components/common/Room/Room.jsx';
+import {Zone1LivingRoom} from '../../components/parts/Zone1LivingRoomModal/Zone1LivingRoomModal.jsx';
+import {Zone2LivingRoom} from '../../components/parts/Zone2LivingRoomModal/Zone2LivingRoomModal.jsx';
+import {Zone3LivingRoom} from '../../components/parts/Zone3LivingRoomModal/Zone3LivingRoomModal.jsx';
+import {Zone4LivingRoom} from '../../components/parts/Zone4LivingRoomModal/Zone4LivingRoomModal.jsx';
 
 export function LivingRoom() {
   const zones = [

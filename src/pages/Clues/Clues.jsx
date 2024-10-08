@@ -3,8 +3,8 @@ import SleepingRoomClues from '/Patapouf_SleepingRoom_ClickPoints.jpeg';
 import LivingRoomClues from '/Patapouf_LivingRoom_ClickPoints.jpeg';
 import SleepingRoom from '/Patapouf_SleepingRoom.jpeg';
 import LivingRoom from '/Patapouf_LivingRoom.jpeg';
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import {useState} from 'react';
+import {NavLink} from 'react-router-dom';
 
 export function Clues() {
 
