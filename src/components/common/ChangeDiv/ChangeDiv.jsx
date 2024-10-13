@@ -1,5 +1,5 @@
 import './ChangeDiv.css';
-import { useState } from 'react';
+import {useState} from 'react';
 
 export function ChangeDiv ({ targetNumber, secretMessage }) {
     const [inputValue, setInputValue] = useState('');

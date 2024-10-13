@@ -1,6 +1,6 @@
 import './Room.css';
-import { useRef } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import {useRef} from 'react';
+import {NavLink, useLocation} from 'react-router-dom';
 import useMouseEnter from '../../../hooks/useMouseEnter.js';
 
 export function Room({ zones, hoveredmsg, imageSrc, mapName, onZoneClick }) {

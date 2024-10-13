@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 
 export function ShowClue({ secretMessage, defaultMessage, storageKey, storageValue}) {
     const [isClicked, setIsClicked] = useState(false);
